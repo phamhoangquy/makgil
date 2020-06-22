@@ -47,3 +47,38 @@ function tabActive() {
 		$("#" + display).addClass("active");
 	});
 }
+
+function productHomeSlide(){
+	var swiper = new Swiper('.product__slide', {
+		slidesPerView: 1,
+		spaceBetween: 30,
+		loop: true,
+		speed: 2000,
+		autoplay: {
+			delay: 1000,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			1440: {
+				slidesPerView: 4,
+			},
+			1280:{
+				slidesPerView: 4,
+			},
+			575:{
+				slidesPerView: 3,
+			},
+			375:{
+				slidesPerView: 2,
+			}
+		},
+	})
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	productHomeSlide();
+});
