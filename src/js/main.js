@@ -63,20 +63,29 @@ function productHomeSlide(){
 			nextEl: '.product-logo__slide .swiper-button-next',
 			prevEl: '.product-logo__slide .swiper-button-prev',
 		},
-		// breakpoints: {
-		// 	1440: {
-		// 		slidesPerView: 4,
-		// 	},
-		// 	1280:{
-		// 		slidesPerView: 4,
-		// 	},
-		// 	575:{
-		// 		slidesPerView: 2,
-		// 	},
-		// 	375:{
-		// 		slidesPerView: 2,
-		// 	}
-		// },
+		breakpointsInverse: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				
+			},
+			400: {
+				slidesPerView: 1,
+				
+			},
+			480: {
+				slidesPerView: 2,
+				
+			},
+			1025: {
+				slidesPerView: 2,
+			
+			},
+			1280: {
+				slidesPerView: 6,
+				
+			},
+		},
 	})
 }
 
