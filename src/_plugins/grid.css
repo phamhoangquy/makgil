@@ -346,6 +346,12 @@ template {
 	margin-left: auto;
 }
 
+.container-custom {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 @media (min-width: 768px) {
 	.container {
 		max-width: 740px;
@@ -361,6 +367,9 @@ template {
 @media (min-width: 1280px) {
 	.container {
 		max-width: 1260px;
+	}
+	.container-custom{
+		max-width: 1440px;
 	}
 }
 
