@@ -5,85 +5,87 @@ section.banner-contact
                 img(src="./img/lien-he/banner-contact.png", alt="")
 
 section.form-contact
-    .container
-        .card-title
-            h1 LIÊN HỆ
-        .row
-            .col-lg-6
-                .left
-                    .logo
-                        .img
-                            img(src="./img/lien-he/logo.png", alt="")
-                    .card-title
-                        h2 CÔNG TY TNHH MAKGIL VIỆT NAM
-                    .card-body
-                        ul
-                            li
-                                p
-                                    strong
-                                        span.fas.fa-map
-                                        | Trụ sở chính
-                                p 18/21 Nguyễn Văn Dung, Phường 06, Q. Gò vấp, TP.Hồ Chí Minh
-                            li
-                                p
-                                    strong
-                                        span.fas.fa-map
-                                        | Văn phòng Hà Nội
-                                p Số 130 D4 Khu độ thị mới Đại Kim, Đại Kim, Quận Hoàng Mai, Hà Nội
-                            li
-                                p
-                                    span.fas.fa-map
-                                    | 028-665-72704
-                                p
-                                    span.fas.fa-map
-                                    | info@makgil.com
-                                p 
-                                    span.fas.fa-map
-                                    | http://makgil.com 
-                           
-            .col-lg-6
-                .form
-                    .row
-                        .col-lg-6
-                            .form-email(action="#")
-                                .form-group
-                                    input.form-control#text(type="text" placeholder="Họ và tên" name="text")
-                        .col-lg-6
-                            .form-email(action="#")
-                                .form-group
-                                    input.form-control#address(type="text" placeholder="Địa chỉ" name="address")
-                        .col-lg-6
-                            .form-email(action="#")
-                                .form-group
-                                    input.form-control#email(type="text" placeholder="Email" name="email")
-                        .col-lg-6
-                            .form-email(action="#")
-                                .form-group
-                                    input.form-control#phone(type="text" placeholder="Số điện thoại" name="phone")
-                        .col-lg-12
-                            .form-email(action="#")
-                                .form-group
-                                    input.form-control#title(type="text" placeholder="Tiêu đề" name="title")
-                        .col-lg-12
-                            .form-email(action="#")
-                                .form-group
-                                    textarea.form-control(name="", cols="30", rows="5" placeholder="Nội dung")
-                        .col-lg-12
-                            .item
-                                .row
-                                    .col-lg-3
-                                    .col-lg-2 
-                                    .col-lg-4
-                                    .col-lg-3
-                                        .button
-                                            button GỬI
-                                
+    .container-custom
+        .container
+            .card-title
+                h1 LIÊN HỆ
+            .row
+                .col-lg-6
+                    .left
+                        .logo
+                            .img
+                                img(src="./img/lien-he/logo.png", alt="")
+                        .card-title
+                            h2 CÔNG TY TNHH MAKGIL VIỆT NAM
+                        .card-body
+                            ul
+                                li
+                                    p
+                                        strong
+                                            em.mdi.mdi-map-marker
+                                            | Trụ sở chính
+                                    p 18/21 Nguyễn Văn Dung, Phường 06, Q. Gò vấp, TP.Hồ Chí Minh
+                                li
+                                    p
+                                        strong
+                                            em.material-icons 
+                                            | Văn phòng Hà Nội
+                                    p Số 130 D4 Khu độ thị mới Đại Kim, Đại Kim, Quận Hoàng Mai, Hà Nội
+                                li
+                                    p
+                                        em.mdi.mdi-phone
+                                        | 028-665-72704
+                                    p
+                                        em.mdi.mdi-email
+                                        | info@makgil.com
+                                    p 
+                                        em.mdi.mdi-laptop
+                                        | http://makgil.com 
+                            
+                .col-lg-6
+                    .form
+                        .row
+                            .col-lg-6
+                                .form-email(action="#")
+                                    .form-group
+                                        input.form-control#text(type="text" placeholder="Họ và tên" name="text")
+                            .col-lg-6
+                                .form-email(action="#")
+                                    .form-group
+                                        input.form-control#address(type="text" placeholder="Địa chỉ" name="address")
+                            .col-lg-6
+                                .form-email(action="#")
+                                    .form-group
+                                        input.form-control#email(type="text" placeholder="Email" name="email")
+                            .col-lg-6
+                                .form-email(action="#")
+                                    .form-group
+                                        input.form-control#phone(type="text" placeholder="Số điện thoại" name="phone")
+                            .col-lg-12
+                                .form-email(action="#")
+                                    .form-group
+                                        input.form-control#title(type="text" placeholder="Tiêu đề" name="title")
+                            .col-lg-12
+                                .form-email(action="#")
+                                    .form-group
+                                        textarea.form-control(name="", cols="30", rows="5" placeholder="Nội dung")
+                            .col-lg-12
+                                .item
+                                    .row
+                                        .col-lg-3
+                                        .col-lg-2 
+                                        .col-lg-4
+                                        .col-lg-3
+                                            .button
+                                                button GỬI
+                                    
 
 section.map
-    .container
-        .map-wrapper
-            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19896.2391182464!2d106.67608946496217!3d10.772064938675168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f26de7d8973%3A0x8d5075f38e1bf491!2zNTA2LCAxNyBCYSBUaMOhbmcgSGFpLCBwaMaw4budbmcgMTEsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1590154490382!5m2!1svi!2s',  frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0',width="100%",height="400px")
-		
+    .container-custom
+        .container
+            .map-wrapper
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19896.2391182464!2d106.67608946496217!3d10.772064938675168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f26de7d8973%3A0x8d5075f38e1bf491!2zNTA2LCAxNyBCYSBUaMOhbmcgSGFpLCBwaMaw4budbmcgMTEsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1590154490382!5m2!1svi!2s',  frameborder='0', style='border:0;', allowfullscreen='', aria-hidden='false', tabindex='0',width="100%",height="400px")
+            
 
 
     

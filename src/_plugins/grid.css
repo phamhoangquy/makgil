@@ -1,3 +1,21 @@
+::-webkit-scrollbar-track {
+	box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+	background-color: #fff;
+}
+
+::-webkit-scrollbar {
+	width           : 5px;
+	height          : 5px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius   : 2.5px;
+	box-shadow      : inset 0 0 6px rgba(255, 255, 255, 0);
+	background-color: #62a6d3;
+}
+
+
 *,
 *::before,
 *::after {
@@ -919,3 +937,4 @@ template {
 		max-width: 100%;
 	}
 }
+
