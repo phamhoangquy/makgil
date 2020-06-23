@@ -16,6 +16,7 @@ $(document).ready(function() {
 			}
 		});
 	}
+	
 });
 //Check if windows size large then 1024 then these function will be execute
 if ($(window).width() > 1024) {
@@ -49,18 +50,18 @@ function tabActive() {
 }
 
 function productHomeSlide(){
-	var swiper = new Swiper('.product__slide', {
-		slidesPerView: 1,
-		spaceBetween: 30,
+	var swiper = new Swiper('.product-logo__slide .product-logo', {
+		slidesPerView: 6,
+		spaceBetween: 0,
 		loop: true,
-		speed: 2000,
-		autoplay: {
-			delay: 1000,
-			disableOnInteraction: false,
-		},
+		speed: 1000,
+		// autoplay: {
+		// 	delay: 1000,
+		// 	disableOnInteraction: false,
+		// },
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.product-logo__slide .swiper-button-next',
+			prevEl: '.product-logo__slide .swiper-button-prev',
 		},
 		breakpoints: {
 			1440: {
