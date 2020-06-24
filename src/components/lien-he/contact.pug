@@ -43,42 +43,23 @@ section.form-contact
                                         | http://makgil.com 
                             
                 .col-lg-6
-                    .form
+                    .wrap-form
                         .row
-                            .col-lg-6
-                                .form-email(action="#")
-                                    .form-group
-                                        input.form-control#text(type="text" placeholder="Họ và tên" name="text")
-                            .col-lg-6
-                                .form-email(action="#")
-                                    .form-group
-                                        input.form-control#address(type="text" placeholder="Địa chỉ" name="address")
-                            .col-lg-6
-                                .form-email(action="#")
-                                    .form-group
-                                        input.form-control#email(type="text" placeholder="Email" name="email")
-                            .col-lg-6
-                                .form-email(action="#")
-                                    .form-group
-                                        input.form-control#phone(type="text" placeholder="Số điện thoại" name="phone")
-                            .col-lg-12
-                                .form-email(action="#")
-                                    .form-group
-                                        input.form-control#title(type="text" placeholder="Tiêu đề" name="title")
-                            .col-lg-12
-                                .form-email(action="#")
-                                    .form-group
-                                        textarea.form-control(name="", cols="30", rows="5" placeholder="Nội dung")
-                            .col-lg-12
-                                .item
-                                    .row
-                                        .col-lg-3
-                                        .col-lg-2 
-                                        .col-lg-4
-                                        .col-lg-3
-                                            .button
-                                                button GỬI
-                                    
+                            .form-group.col-6
+                                input.form-control(type='text', placeholder="Họ và tên")
+                            .form-group.col-6
+                                input.form-control(type='text',placeholder="Địa chỉ")
+                            .form-group.col-6
+                                input.form-control(type='text',placeholder="Email")
+                            .form-group.col-6
+                                input.form-control(type='text',placeholder="Số điện thoại")
+                            .form-group.col-12
+                                input.form-control(type='text',placeholder="Tiêu đề")
+                            .form-group.col-12
+                                textarea#inpputTextArea.form-control(rows='3',placeholder="Nội dung")
+                        .frm-btnwrap
+                            .frm-btn
+                                input(type="submit" value ="GỬI")         
 
 section.map
     .container-custom
