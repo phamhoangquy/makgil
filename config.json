@@ -17,7 +17,6 @@
   "css": [
     "src/_plugins/font.css",
     "src/_plugins/grid.css",
-    "bower_components/swiper/dist/css/swiper.css",
-    "bower_components/bootstrap/dist/css/bootstrap.min.css"
+    "bower_components/swiper/dist/css/swiper.css"
   ]
 }

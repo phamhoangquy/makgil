@@ -1,22 +1,22 @@
 header
 	.container-custom
-		.container
+		.container.flex-space
 			.header-wrapper-left
 				.nav-brand
 					.ModuleContent
 						a(href="#")
 							img(src="./img/logo.png", alt="")
 			.header-wrapper-right
-				.wrapper-top
+				.wrapper-top.flex-end
 					.contact-wrapper
 						em.mdi.mdi-phone
 						span 027 665 72704
 					.mail-wrapper
 						a(href="#")
-						em.mdi.mdi-email
+							em.mdi.mdi-email
 					.search-wrapper
 						.searchbox
-							input
+							input(type="text", placeholder="Tim kiem")
 							button
 								em.mdi.mdi-magnify
 					.language-wrapper
@@ -28,9 +28,11 @@ header
 								a(href="#") VN
 							li
 								a(href="#") EN
+					.mobile-toggle
+						em.lnr.lnr-menu
 				.wrapper-bottom
-					ul.nav-primary
-						li
+					ul.nav-menu-primary
+						li.active
 							a(href="#") 
 								em.mdi.mdi-home
 						li
@@ -45,3 +47,4 @@ header
 							a(href="#") Tuyển dụng
 						li
 							a(href="#") Liên hệ
+	.mobile-wrapper
