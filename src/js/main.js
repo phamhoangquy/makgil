@@ -1,21 +1,5 @@
 $(document).ready(function () {
-	//Declare normal variable javascript
-	//Hide element when smaller than 1025
-
-	//Declare function Javascript
-	tabActive();
-	// if ($(window).width() > 1024) {
-	// 	const $menu = $(".searchbox");
-	// 	$(document).mouseup(e => {
-	// 		if (
-	// 			!$menu.is(e.target) && // if the target of the click isn't the container...
-	// 			$menu.has(e.target).length === 0
-	// 		) {
-	// 			// ... nor a descendant of the container
-	// 			$menu.removeClass("active");
-	// 		}
-	// 	});
-	// }
+	swiperInit();
 	toggleMobileMenu();
 	mappingMenu();
 	mappingContact();
@@ -53,7 +37,65 @@ function tabActive() {
 	});
 }
 
-function productHomeSlide() {
+function swiperInit() {
+
+
+	var homerSwiper = new Swiper(".home-product-zone .swiper-container", {
+		// Optional parameters
+		speed: 1205,
+		slidesPerView: 1,
+		spaceBetween: 20,
+
+		autoplay: {
+			delay: 3000
+		},
+		navigation: {
+			nextEl: '.nav-arrow-next',
+			prevEl: '.nav-arrow-prev',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+
+			},
+			400: {
+				slidesPerView: 2,
+
+			},
+			480: {
+				slidesPerView: 3,
+
+			},
+			768: {
+				slidesPerView: 4,
+
+			},
+			1025: {
+				slidesPerView: 6,
+
+			},
+			1440: {
+				slidesPerView: 8,
+
+			},
+		},
+
+	});
+	var homerSwiper = new Swiper(".home-banner .swiper-container", {
+		// Optional parameters
+		speed: 1205,
+		slidesPerView: 1,
+		autoplay: {
+			delay: 3000
+		},
+		pagination: {
+			el: ".home-banner-pagination",
+			type: "bullets",
+			clickable: "true"
+		}
+	});
+
 	var swiper = new Swiper('.product-logo__slide .product-logo', {
 		slidesPerView: 6,
 		spaceBetween: 0,
@@ -93,9 +135,6 @@ function productHomeSlide() {
 	})
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-	productHomeSlide();
-});
 
 
 function toggleMobileMenu() {
@@ -137,4 +176,3 @@ function mappingSearch() {
 		breakpoint: 1025
 	}).watch();
 }
-

@@ -418,7 +418,7 @@ template {
 	padding-right: 0;
 	padding-left: 0;
 }
-
+.col-w-5,
 .col-1,
 .col-2,
 .col-3,
@@ -544,6 +544,11 @@ template {
 	-ms-flex: 0 0 50%;
 	flex: 0 0 50%;
 	max-width: 50%;
+}
+.col-w-5 {
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 20%;
 }
 
 .col-7 {
