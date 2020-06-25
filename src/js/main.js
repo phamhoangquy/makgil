@@ -37,10 +37,51 @@ function tabActive() {
 	});
 }
 
+
 function swiperInit() {
-
-
 	var homerSwiper = new Swiper(".home-product-zone .swiper-container", {
+		// Optional parameters
+		speed: 1205,
+		slidesPerView: 1,
+		spaceBetween: 20,
+
+		autoplay: {
+			delay: 3000
+		},
+		navigation: {
+			nextEl: '.nav-arrow-next',
+			prevEl: '.nav-arrow-prev',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+
+			},
+			400: {
+				slidesPerView: 2,
+
+			},
+			480: {
+				slidesPerView: 3,
+
+			},
+			768: {
+				slidesPerView: 4,
+
+			},
+			1025: {
+				slidesPerView: 6,
+
+			},
+			1440: {
+				slidesPerView: 8,
+
+			},
+		},
+
+	});
+	var aboutSwiper = new Swiper(".about-3 .swiper-container", {
 		// Optional parameters
 		speed: 1205,
 		slidesPerView: 1,

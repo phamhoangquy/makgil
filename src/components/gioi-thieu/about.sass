@@ -160,6 +160,49 @@
 
 //section about-3
 .about-3
+    .container
+        position: relative
+    .nav-arrow-prev,.nav-arrow-next
+        position: absolute
+        width: 40px
+        height: 40px
+        top: 60%
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 2px solid $azure
+        transition: .3s all  ease-in-out
+        @media screen and ( max-width: 400px )
+            top: 60%
+            
+        &:hover,&:focus
+            background: $azure
+            em
+                color: #ffffff
+        em
+            transition: .3s all  ease-in-out
+            color: $azure
+            font-size: 18px
+    .nav-arrow-next
+        right: -60px
+        @media screen and ( max-width: 1439px)
+            right: -45px
+        @media screen and ( max-width: 1350px)
+            right: 0
+        @media screen and ( max-width: 767px)
+            right: 15px
+            
+    .nav-arrow-prev
+        left: -60px
+        @media screen and ( max-width: 1439px)
+            left: -45px
+        @media screen and ( max-width: 1350px)
+            left: 0
+        @media screen and ( max-width: 767px)
+            left: 15px
+    .swiper-container
+        @media screen and ( max-width: 1350px)
+            margin: 0 50px
     .card_title
         margin: 40px 0 40px 0
         h3 
