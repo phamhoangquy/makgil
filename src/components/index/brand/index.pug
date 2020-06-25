@@ -1,0 +1,16 @@
+section.about-3
+    .container-custom
+        .container
+            .card_title
+                h3 THƯƠNG HIỆU
+            .nav-arrow-prev
+                em.mdi.mdi-arrow-left
+            .nav-arrow-next
+                em.mdi.mdi-arrow-right
+            .product-logo__slide
+                .swiper-container.product-logo
+                    .swiper-wrapper
+                        -for(i=1; i<7; i++)
+                            .swiper-slide
+                                .img
+                                    img(src="./img/gioi-thieu/about-logo-"+i+".png", alt="")

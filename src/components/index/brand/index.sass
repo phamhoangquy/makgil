@@ -1,0 +1,82 @@
+.about-3
+    .container
+        position: relative
+    .nav-arrow-prev,.nav-arrow-next
+        position: absolute
+        width: 40px
+        height: 40px
+        top: 60%
+        display: flex
+        justify-content: center
+        align-items: center
+        border: 2px solid $azure
+        transition: .3s all  ease-in-out
+        @media screen and ( max-width: 400px )
+            top: 60%
+            
+        &:hover,&:focus
+            background: $azure
+            em
+                color: #ffffff
+        em
+            transition: .3s all  ease-in-out
+            color: $azure
+            font-size: 18px
+    .nav-arrow-next
+        right: -60px
+        @media screen and ( max-width: 1439px)
+            right: -45px
+        @media screen and ( max-width: 1350px)
+            right: 0
+        @media screen and ( max-width: 767px)
+            right: 15px
+            
+    .nav-arrow-prev
+        left: -60px
+        @media screen and ( max-width: 1439px)
+            left: -45px
+        @media screen and ( max-width: 1350px)
+            left: 0
+        @media screen and ( max-width: 767px)
+            left: 15px
+    .swiper-container
+        @media screen and ( max-width: 1350px)
+            margin: 0 50px
+    .card_title
+        margin: 40px 0 40px 0
+        h3 
+            font-size: 30px
+            color: #333333
+    .product-logo__slide
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        .product-logo
+            width: 100%
+            .img
+                border: 1px solid #e1e1e1
+                object-fit: cover
+                img 
+                    width: 100%
+                    height: 100%
+        .swiper-button-prev
+            border: 1px solid #62a6d3
+            width: 40px
+            height: 40px
+            left: -80px
+            
+            &:hover
+                background: #62a6d3
+                color: #ffffff
+                border: 1px solid #62a6d3
+            
+        .swiper-button-next
+            border: 1px solid #62a6d3
+            width: 40px
+            right: -80px
+            &:hover
+                background: #62a6d3
+                color: #ffffff
+                border: 1px solid #62a6d3
+
