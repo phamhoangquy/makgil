@@ -46,7 +46,7 @@ function swiperInit() {
 		spaceBetween: 20,
 
 		autoplay: {
-			delay: 3000
+			delay: 2000
 		},
 		navigation: {
 			nextEl: '.nav-arrow-next',
@@ -72,7 +72,6 @@ function swiperInit() {
 			},
 			1025: {
 				slidesPerView: 6,
-
 			},
 			1440: {
 				slidesPerView: 8,
@@ -83,12 +82,12 @@ function swiperInit() {
 	});
 	var aboutSwiper = new Swiper(".about-3 .swiper-container", {
 		// Optional parameters
-		speed: 1205,
+		speed: 1000,
 		slidesPerView: 1,
 		spaceBetween: 20,
 
 		autoplay: {
-			delay: 3000
+			delay: 2000
 		},
 		navigation: {
 			nextEl: '.nav-arrow-next',
