@@ -49,8 +49,8 @@ function swiperInit() {
 			delay: 2000
 		},
 		navigation: {
-			nextEl: '.nav-arrow-next',
-			prevEl: '.nav-arrow-prev',
+			nextEl: '.home-product-zone .nav-arrow-next',
+			prevEl: '.home-product-zone .nav-arrow-prev',
 		},
 		breakpointsInverse: true,
 		breakpoints: {
@@ -80,6 +80,48 @@ function swiperInit() {
 		},
 
 	});
+	var brandSwiper = new Swiper(".brand-display .swiper-container", {
+		// Optional parameters
+		speed: 1000,
+
+		autoplay: {
+			delay: 2000
+		},
+			navigation: {
+				nextEl: '.brand-display .nav-arrow-next',
+				prevEl: '.brand-display .nav-arrow-prev',
+			},
+		breakpointsInverse: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+
+			},
+			400: {
+				slidesPerView: 2,
+
+			},
+			480: {
+				slidesPerView: 3,
+
+			},
+			768: {
+				slidesPerView: 4,
+
+			},
+			1025: {
+				slidesPerView: 4,
+
+			},
+			1440: {
+				slidesPerView: 6,
+
+			},
+		},
+
+	});
+
+
 	var aboutSwiper = new Swiper(".about-3 .swiper-container", {
 		// Optional parameters
 		speed: 1000,

@@ -1,0 +1,526 @@
+a {
+  color: inherit;
+}
+
+select {
+  -webkit-appearance: none;
+}
+
+.btn {
+  font-size: 12.5px;
+}
+
+.content-header {
+  margin-bottom: 20px;
+  margin-top: -5px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 5px 0;
+}
+
+.content-header .mb-2 {
+  margin-bottom: 0 !important;
+}
+
+.content-header h1 {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.content-toolbar {
+  padding: 0 0 20px;
+  background: #fff;
+  color: #869099;
+  margin-bottom: -4px;
+  text-align: right;
+}
+
+.content-toolbar > * {
+  margin-bottom: 4px;
+}
+
+.metromini .row {
+  margin-bottom: -30px;
+}
+
+.metromini .row > div {
+  margin-bottom: 30px;
+}
+
+.metromini .item {
+  width: 20%;
+  padding: 0 15px;
+}
+
+.metromini .item .bg-clouds {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 30px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #616a78;
+  height: 100%;
+  text-align: center;
+  -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.metromini .item .bg-clouds i {
+  font-size: 60px;
+  color: #ef5350;
+  margin-bottom: 20px;
+}
+
+.metromini .item .bg-clouds:hover {
+  background: #ef5350;
+  color: #fff;
+}
+
+.metromini .item .bg-clouds:hover i {
+  color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .metromini .item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .metromini .item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 1025px) {
+  .metromini .item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .metromini .item {
+    width: 100%;
+  }
+}
+
+.navbar-nav:first-child > li a i {
+  margin-right: 4px;
+}
+
+.navbar-nav:first-child .dropdown .dropdown-menu {
+  min-width: 15rem;
+}
+
+.navbar-nav:first-child .dropdown .dropdown-menu li a {
+  color: #212529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.navbar-nav:first-child .dropdown .dropdown-menu li a i {
+  margin-right: 8px;
+  width: 20px;
+}
+
+@media (max-width: 1025px) {
+  .navbar-nav:first-child li + li {
+    display: none;
+  }
+}
+
+.admin-content-bg-white {
+  padding: 20px;
+  background: #fff;
+}
+
+.headInfo.admin-content-bg-white {
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px 0 0 !important;
+}
+
+.btn, .form-control {
+  border-radius: 0 !important;
+}
+
+.table-paginate, .pagination {
+  margin: 10px 0 0;
+}
+
+.table-paginate li.active a, .pagination li.active a {
+  background: #398bf7;
+  color: #fff;
+}
+
+.table-paginate a, .table-paginate span, .pagination a, .pagination span {
+  padding: 5px 15px;
+  border-radius: 0;
+  margin-right: 5px;
+  display: inline-block;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  min-width: 1.5rem;
+}
+
+.table-paginate a.SelectedPage, .table-paginate a:hover, .table-paginate span.SelectedPage, .table-paginate span:hover, .pagination a.SelectedPage, .pagination a:hover, .pagination span.SelectedPage, .pagination span:hover {
+  background: #398bf7;
+  color: #fff;
+}
+
+.RadGrid_Default {
+  border: 0 !important;
+}
+
+.table-responsive {
+  width: 100% !important;
+}
+
+.cmstable {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.cmstable thead th {
+  background: #fff !important;
+  font-weight: 600 !important;
+  font-size: 1rem;
+  padding: 1rem !important;
+  border-bottom: 1px solid #f4f4f4 !important;
+  vertical-align: middle !important;
+  color: #616161 !important;
+}
+
+.cmstable thead th [type=checkbox] + label {
+  height: 20px;
+}
+
+.cmstable thead th + th {
+  border-left: 0 !important;
+}
+
+.cmstable > tbody tr {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  background-color: #fff !important;
+}
+
+.cmstable > tbody tr td {
+  font-size: 1rem;
+  padding: 1rem !important;
+  border: 0 !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.cmstable > tbody tr td [type=checkbox] + label {
+  height: 20px;
+}
+
+.cmstable > tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
+.cmstable > tbody tr.rgSelectedRow, .cmstable > tbody tr:nth-of-type(odd).rgSelectedRow {
+  background: #ef5350 !important;
+}
+
+.cmstable > tbody tr.rgSelectedRow td, .cmstable > tbody tr:nth-of-type(odd).rgSelectedRow td {
+  border-bottom: 1px solid #fff !important;
+}
+
+.admin-bannerlist .cmstable > tbody tr td img {
+  width: 200px;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.control-label {
+  font-weight: normal !important;
+}
+
+.rgFilterRow td {
+  padding: 0.75rem !important;
+}
+
+.rgFilterRow td input {
+  display: block;
+  width: calc(100% - 30px) !important;
+  height: calc(1.75rem + 2px) !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 0 15px !important;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+body .sorter {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .sorter .list-group-item, body .sorter li {
+  display: block;
+  border-radius: 0;
+  font-size: 14px;
+  padding: 0;
+}
+
+body .sorter .list-group-item a, body .sorter li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  background: #fff;
+  font-size: 12px;
+}
+
+body .sorter .list-group-item a:hover, body .sorter li a:hover {
+  background: #d2d6de;
+  color: #fff;
+}
+
+body .sorter .list-group-item + .list-group-item a, body .sorter li + .list-group-item a {
+  border-bottom: 0 !important;
+}
+
+body .sorter .list-group-item + li a, body .sorter li + li a {
+  border-bottom: 0 !important;
+}
+
+body:not(.pagelayout) .sorter {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 250;
+}
+
+.rbroles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rbroles input {
+  margin-right: 0.5rem;
+}
+
+.rbroles label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.aspcheckboxlist td {
+  padding-right: 1.75rem;
+}
+
+.aspcheckboxlist label {
+  font-weight: normal;
+}
+
+.aspcheckboxlist input {
+  margin-right: 0.5rem;
+}
+
+.riTextBox {
+  display: block !important;
+  width: 100% !important;
+  padding: 0.375rem 0.75rem !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  background-color: #fff !important;
+  background-clip: padding-box !important;
+  border: 1px solid #ced4da !important;
+  border-radius: 0 !important;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: auto !important;
+}
+
+.chosen-container, .chosen-container-multi {
+  width: 100% !important;
+}
+
+.chosen-container .chosen-choices, .chosen-container-multi .chosen-choices {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #d2d6de;
+}
+
+.chosen-container .chosen-choices .search-field input[type="text"], .chosen-container-multi .chosen-choices .search-field input[type="text"] {
+  padding: 0;
+}
+
+.chosen-container .chosen-choices .search-choice, .chosen-container-multi .chosen-choices .search-choice {
+  border-radius: 0;
+}
+
+.aspcheckboxlist li, .settingrow .nav li {
+  margin-right: 40px;
+}
+
+.rdo-list .nav li {
+  margin-right: 0 !important;
+}
+
+.rdo-list .nav li + li {
+  margin-top: 10px;
+}
+
+.rtsUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 20px;
+}
+
+.rtsUL .rtsLI {
+  margin-bottom: -1px;
+}
+
+.rtsUL .rtsLI a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  font-size: 13px;
+  color: #929daf;
+  border-bottom: 2px solid transparent;
+  padding: 10px 16px;
+  border-radius: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 0px;
+  margin-right: 3px;
+}
+
+.rtsUL .rtsLI a .rtsImg {
+  margin-right: 6px;
+}
+
+.rtsUL .rtsLI a.rtsSelected {
+  border-bottom: 2px solid #398bf7;
+}
+
+select.p-15 option {
+  padding: 5px 12px;
+  margin-bottom: 5px;
+}
+
+.RadComboBox .rcbInner, .RadComboBox .rcbFocused {
+  height: 38px !important;
+  border-radius: 0 !important;
+  border: 1px solid #d2d6de !important;
+}
+
+.RadComboBox .rcbActionButton {
+  height: 28px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RadComboBox .p-icon {
+  height: auto !important;
+  width: auto !important;
+  font-size: initial !important;
+}
+
+.pagelayout .content-toolbar, .styleadmin .content-toolbar, .altfileadmin .content-toolbar, .fileadmin .content-toolbar, .serverlog .content-toolbar {
+  padding-top: 0 !important;
+}
+
+.pagelayout .panelistbox select {
+  padding: .5rem .75rem;
+  background-image: none !important;
+}
+
+.templateedit select {
+  background-image: none !important;
+}
+
+.styleadmin .headInfo .form-group:nth-child(2) {
+  margin-bottom: 12px;
+}
+
+.styleadmin .headInfo .form-group:nth-child(2) input[type='submit'] {
+  margin-bottom: 8px;
+}
+
+.altfileadmin .mrb10 {
+  margin: 10px 0;
+}
+
+.altfileadmin .btn-link:hover {
+  color: #212529;
+}
+/*# sourceMappingURL=customize.css.map */

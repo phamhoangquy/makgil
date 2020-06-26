@@ -1,17 +1,40 @@
-section.about-3
-    .container-custom
-        .container
-            .card_title
-                h2 
-                    a(href="gioi-thieu.html") THƯƠNG HIỆU
-            .nav-arrow-prev
-                em.mdi.mdi-arrow-left
-            .nav-arrow-next
-                em.mdi.mdi-arrow-right
-            .product-logo__slide
-                .swiper-container.product-logo
-                    .swiper-wrapper
-                        -for(i=1; i<7; i++)
-                            .swiper-slide
-                                .img
-                                    img(src="./img/gioi-thieu/about-logo-"+i+".png", alt="")
+section.brand-display
+	.container-custom
+		.container
+			.head-title Thuong hieu 
+			.brand-swiper-wrapper
+				.nav-arrow-prev
+					em.mdi.mdi-arrow-left
+				.nav-arrow-next
+					em.mdi.mdi-arrow-right
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/1.png", alt="")
+						.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/1.png", alt="")
+						.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/1.png", alt="")
+						.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/1.png", alt="")
+						.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/1.png", alt="")
+						.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/1.png", alt="")
+						-for(i=1; i<6; i++)
+							.swiper-slide
+								.wrapper
+									a(href="#")
+										img(src="./img/brand/"+i+".png", alt="")

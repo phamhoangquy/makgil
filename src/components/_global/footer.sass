@@ -1,0 +1,176 @@
+footer
+	*
+		color: #ffffff
+
+	.container-custom
+		padding: 50px 0 0 0
+		background: $azure
+	h2
+		font-size: r(18px)
+		color: #ffffff
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 15px
+	.address-col
+		li
+			margin-bottom: 20px
+	.contact-col
+		li
+			a
+				em
+					display: inline-block
+					font-size: 18px
+					margin-right: 5px
+				span
+					font-size: 1rem
+					display: inline-block
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li
+			display: block
+			margin-bottom: 2px
+			h3
+				display: flex
+				margin-bottom: 10px
+				em
+					font-size: 18px
+					display: inline-block
+					margin-right: 5px
+				span
+					font-size: 1rem
+					font-weight: 600
+			a,span
+				display: block
+				font-size: 1rem
+				font-weight: 300
+				transition: .3s all  ease-in-out
+			a
+				&:hover
+					color: #ffffff
+					opacity: .9
+	.verify-image
+		@media screen and ( max-width: 576px)
+			margin-top: 30px
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			
+		img
+			max-width: 100%
+			height: auto
+	.online-support
+		margin-top: 30px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		h2
+			margin-bottom: 0
+		.link-chat
+			display: flex
+			margin-left: 20px
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 40px
+				height: 40px
+				border-radius: 8px
+				background: #ffffff
+				&:not(:last-child)
+					margin-right: 5px
+				img
+					max-width: 100%
+					height: auto
+					max-height: 27px
+	.row-footer-top
+		.col-12
+			@media screen and ( max-width: 1024px)
+				margin-bottom: 30px
+				
+	.row-footer-bottom
+		margin-top: -60px
+		@media screen and ( max-width: 1024px)
+			margin-top: 15px
+		.col-12
+			display: flex
+			align-items: flex-end
+	.subscrible-wrapper
+		margin-top: 25px
+		@media screen and ( max-width:1024px)
+			width: 100%
+			text-align: center
+			.subscribefrm
+				input
+					width: 100%
+		.subscribefrm
+			height: 50px
+			border: 1px solid #b1d3e9
+			position: relative
+			
+				
+			input
+				background: $azure
+				border: none
+				height: 100%
+				padding: 0 50px 0 20px
+				&:focus
+					outline: none
+				&::placeholder
+					color: #ffffff
+					font-size: r(14px)
+					font-weight: 300
+
+			button
+				position: absolute
+				top: 0
+				right: 0
+				border: none
+				background: none
+				width: 50px
+				height: 50px
+				transition: .3s all  ease-in-out
+				em
+					transition: .3s all  ease-in-out
+					font-size: 18px
+				&:focus
+					outline: none
+				&:hover
+					background: #ffffff
+					em
+						color: $azure
+
+	.footer-bottom-wrapper
+		border-top: 1px solid #ffffff
+		margin-top: 40px
+		padding: 25px 0
+		display: flex
+		justify-content: space-between
+		@media screen and ( max-width: 767px)
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			
+		.copy-right
+			font-size: r(12px)
+			font-weight: 400
+			*
+				font-size: r(12px)
+				font-weight: 400
+			@media screen and ( max-width:767px)
+				margin-bottom: 15px
+				
+		.web-counter
+			font-size: r(12px)
+			font-weight: 400
+			.text
+				
+			*
+				font-size: r(12px)
+				font-weight: 400
+			strong
+				display: inline-block
+				margin-left: 4px
+				font-weight: 700

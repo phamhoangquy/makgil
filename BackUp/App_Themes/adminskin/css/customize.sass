@@ -1,0 +1,332 @@
+$main-color: #ef5350
+a
+	color: inherit
+select
+	-webkit-appearance: none
+.btn
+	font-size: 12.5px
+.content-header
+	margin-bottom: 20px
+	margin-top: -5px
+	margin-left: -20px
+	margin-right: -20px
+	padding: 5px 0
+	.mb-2
+		margin-bottom: 0 !important
+	h1
+		font-size: 20px
+		padding-left: 5px
+.content-toolbar 
+	padding: 0 0 20px
+	background: #fff 
+	color: #869099 
+	margin-bottom: -4px
+	text-align: right
+	> *
+		margin-bottom: 4px
+.metromini 
+	.row
+		margin-bottom: -30px
+		> div
+			margin-bottom: 30px
+	.item 
+		width: 20%
+		padding: 0 15px
+		.bg-clouds
+			transition: 0.3s all
+			padding: 30px
+			background: #fff
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			color: #616a78
+			height: 100%
+			// border: 1px solid rgba(97, 106, 120, 0.2)
+			text-align: center
+			box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1)
+			i
+				font-size: 60px
+				color: #ef5350
+				margin-bottom: 20px
+			&:hover
+				background: #ef5350
+				color: #fff
+				i
+					color: #fff
+		@media (max-width: 1440px)
+			width: 25%
+		@media (max-width: 1200px)
+			width: 33.33%
+		@media (max-width: 1025px)
+			width: 50%
+		@media (max-width: 576px)
+			width: 100%
+.navbar-nav:first-child
+	> li
+		a
+			i
+				margin-right: 4px
+	.dropdown
+		.dropdown-menu
+			min-width: 15rem
+			li
+				a
+					color: #212529
+					display: flex
+					align-items: center
+					white-space: nowrap
+					i
+						margin-right: 8px
+						width: 20px
+	@media (max-width: 1025px)
+		li + li
+			display: none
+.admin-content-bg-white
+	padding: 20px
+	background: #fff
+	// box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1)
+	// border: 1px solid rgba(97, 106, 120, 0.2)
+.headInfo.admin-content-bg-white
+	margin-bottom: 20px
+.breadcrumb
+	height: 100%
+	align-items: center
+	padding: 0 5px 0 0!important
+.btn,.form-control
+	border-radius: 0 !important
+.table-paginate, .pagination
+	margin: 10px 0 0
+	li.active
+		a
+			background: #398bf7
+			color: #fff
+	a,span
+		padding: 5px 15px
+		border-radius: 0
+		margin-right: 5px
+		display: inline-block
+		margin-bottom: 5px
+		transition: 0.3s all
+		min-width: 1.5rem
+		&.SelectedPage,&:hover
+			background: #398bf7
+			color: #fff
+.RadGrid_Default
+	border: 0 !important
+.table-responsive
+	width: 100% !important
+.cmstable
+	font-family: 'Montserrat', sans-serif !important
+	thead
+		th
+			background: #fff !important
+			font-weight: 600 !important
+			font-size: 1rem
+			padding: 1rem !important
+			border-bottom: 1px solid #f4f4f4 !important
+			vertical-align: middle !important
+			color: #616161 !important
+			[type=checkbox] + label 
+				height: 20px
+			+ th
+				border-left: 0 !important
+	> tbody
+		tr
+			transition: 0.3s all
+			background-color: #fff !important
+			td
+				font-size: 1rem
+				padding: 1rem !important
+				border: 0 !important
+				border-bottom: 1px solid #dee2e6 !important
+				[type=checkbox] + label 
+					height: 20px
+			&:hover
+				background-color: rgba(0,0,0,.075) !important
+			&.rgSelectedRow,&:nth-of-type(odd).rgSelectedRow
+				background: $main-color !important
+				td
+					border-bottom: 1px solid #fff !important
+.admin-bannerlist
+	.cmstable
+		> tbody
+			tr
+				td
+					img
+						width: 200px
+.table td, .table th
+	vertical-align: middle
+.table
+	margin-bottom: 0
+.control-label
+	font-weight: normal !important
+.rgFilterRow
+	td
+		padding: 0.75rem !important
+		input
+			display: block
+			width: calc(100% - 30px) !important
+			height: calc(1.75rem + 2px) !important
+			font-size: 1rem
+			font-weight: 400
+			line-height: 1.5
+			padding: 0 15px !important
+			color: #495057
+			background-color: #fff
+			background-clip: padding-box
+			border: 1px solid #ced4da
+			transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+body
+	.sorter
+		flex-direction: column
+		.list-group-item,li
+			display: block
+			border-radius: 0
+			font-size: 14px
+			padding: 0
+			a
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 28px
+				height: 28px
+				text-align: center
+				background: #fff
+				// border: 1px solid #d2d6de
+				font-size: 12px
+				&:hover
+					background: #d2d6de
+					color: #fff
+			+ .list-group-item
+				a
+					border-bottom: 0 !important
+			+ li
+				a
+					border-bottom: 0 !important
+	&:not(.pagelayout)
+		.sorter
+			position: fixed
+			right: 20px
+			top: 50%
+			transform: translateY(-50%)
+			z-index: 250
+
+.rbroles
+	display: flex
+	align-items: center
+	margin-bottom: 1rem
+	input
+		margin-right: 0.5rem
+	label
+		margin-bottom: 0
+		font-weight: normal
+.aspcheckboxlist
+	td
+		padding-right: 1.75rem
+	label
+		font-weight: normal
+	input
+		margin-right: 0.5rem
+.riTextBox
+	display: block !important
+	width: 100% !important
+	padding: 0.375rem 0.75rem !important
+	font-size: 1rem !important
+	line-height: 1.5 !important
+	color: #495057 !important
+	background-color: #fff !important
+	background-clip: padding-box !important
+	border: 1px solid #ced4da !important
+	border-radius: 0 !important
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important
+	box-sizing: border-box
+	height: auto !important
+
+.chosen-container,.chosen-container-multi
+	width: 100% !important
+	.chosen-choices
+		padding: 0.375rem 0.75rem
+		border-radius: 0
+		box-shadow: none
+		border-color: #d2d6de
+		.search-field 
+			input[type="text"]
+				padding: 0
+		.search-choice
+			border-radius: 0
+.aspcheckboxlist,.settingrow .nav
+	li
+		margin-right: 40px
+.rdo-list .nav
+	li
+		margin-right: 0 !important
+		+ li
+			margin-top: 10px
+.rtsUL
+	display: flex
+	flex-wrap: wrap
+	padding-left: 0
+	margin-bottom: 0
+	list-style: none
+	border-bottom: 1px solid #dee2e6
+	margin-bottom: 20px
+	.rtsLI
+		margin-bottom: -1px
+		a
+			display: block
+			overflow: hidden
+			position: relative
+			font-size: 13px
+			color: #929daf
+			border-bottom: 2px solid transparent
+			padding: 10px 16px
+			border-radius: 0
+			transition: 0.5s
+			border: 0px
+			margin-right: 3px
+			.rtsImg
+				margin-right: 6px
+			&.rtsSelected
+				border-bottom: 2px solid #398bf7
+select.p-15
+	option
+		padding: 5px 12px
+		margin-bottom: 5px
+.RadComboBox .rcbInner, .RadComboBox .rcbFocused
+	height: 38px !important
+	border-radius: 0 !important
+	border: 1px solid #d2d6de !important
+.RadComboBox .rcbActionButton 
+	height: 28px !important
+	display: flex
+	justify-content: center
+	align-items: center
+.RadComboBox .p-icon
+	height: auto !important
+	width: auto !important
+	font-size: initial !important
+
+//Customize for each page
+.pagelayout,.styleadmin,.altfileadmin,.fileadmin,.serverlog
+	.content-toolbar 
+		padding-top: 0 !important
+.pagelayout
+	.panelistbox
+		select
+			padding: .5rem .75rem
+			background-image: none !important
+.templateedit
+	select
+		background-image: none !important
+.styleadmin
+	.headInfo
+		.form-group:nth-child(2)
+			margin-bottom: 12px
+			input[type='submit']
+				margin-bottom: 8px
+.altfileadmin
+	.mrb10
+		margin: 10px 0
+	.btn-link:hover
+		color: #212529
