@@ -102,7 +102,7 @@ function swiperInit() {
 
 			},
 			480: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 
 			},
 			768: {
