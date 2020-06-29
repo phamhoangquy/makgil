@@ -3,8 +3,12 @@ header
 	position: fixed
 	top: 0
 	width: 100%
-	right: 0
+	right: 50%
+	transform: translateX(50%)
 	z-index: 999
+	max-width: 100%
+	@media (min-width: 1280px)
+		max-width: 1440px
 	@media screen and ( max-width: 1024px)
 		height: 60px
 		

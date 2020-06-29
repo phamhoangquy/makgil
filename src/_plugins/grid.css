@@ -388,7 +388,8 @@ template {
 	.container {
 		max-width: 1260px;
 	}
-	.container-custom{
+	.container-custom
+	 {
 		max-width: 1440px;
 	}
 }

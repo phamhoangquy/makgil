@@ -1,0 +1,14 @@
+extends _layout.pug
+
+block var
+	- var title = 'LIÊN HỆ'
+	- var bodyClass = 'contact-page'
+
+block main
+	.container-custom
+		.container
+			.row
+				.col-12.col-lg-3
+					include ../components/product/filter/index.pug
+				.col-12.col-lg-9
+					include ../components/product/display/index.pug

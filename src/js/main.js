@@ -4,7 +4,7 @@ $(document).ready(function () {
 	mappingMenu();
 	mappingContact();
 	mappingSearch();
-
+	setBackground();
 });
 //Check if windows size large then 1024 then these function will be execute
 if ($(window).width() > 1024) {
@@ -80,6 +80,58 @@ function swiperInit() {
 		},
 
 	});
+
+
+	var productThumbs = new Swiper(
+		".swiper-product-thumbs  .swiper-container", {
+			spaceBetween: 10,
+			freeMode: false,
+			breakpointsInverse: true,
+			breakpoints: {
+				320: {
+					slidesPerView: 1.5,
+					direction: "horizontal",
+					spaceBetween: 10
+				},
+				576: {
+					slidesPerView: 3.5,
+					direction: "horizontal",
+					spaceBetween: 10
+				},
+				1025: {
+					slidesPerView: 4,
+					direction: "vertical"
+				},
+				1440: {
+					slidesPerView: 4,
+					direction: "vertical"
+				}
+			},
+			centeredSlides: true,
+			direction: "vertical",
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+			navigation: {
+				nextEl: ".product-thumb-next",
+				prevEl: ".product-thumb-prev"
+			}
+		}
+	);
+
+	var productMain = new Swiper(".swiper-product-main .swiper-container", {
+		slidesPerView: 1,
+		centeredSlides: true,
+		effect: "fade",
+		fadeEffect: {
+			crossFade: true
+		},
+		speed: 750,
+		loop: false,
+		thumbs: {
+			swiper: productThumbs
+		}
+	});
+
 	var brandSwiper = new Swiper(".brand-display .swiper-container", {
 		// Optional parameters
 		speed: 1000,
@@ -87,10 +139,10 @@ function swiperInit() {
 		autoplay: {
 			delay: 2000
 		},
-			navigation: {
-				nextEl: '.brand-display .nav-arrow-next',
-				prevEl: '.brand-display .nav-arrow-prev',
-			},
+		navigation: {
+			nextEl: '.brand-display .nav-arrow-next',
+			prevEl: '.brand-display .nav-arrow-prev',
+		},
 		breakpointsInverse: true,
 		breakpoints: {
 			320: {
@@ -257,4 +309,22 @@ function mappingSearch() {
 		desktopMethod: "insertBefore",
 		breakpoint: 1025
 	}).watch();
+}
+
+function setBackground() {
+	$("[setBackground]").each(function () {
+		var background = $(this).attr("setBackground");
+		$(this).css({
+			"background-image": "url(" + background + ")",
+			"background-size": "cover",
+			"background-position": "center center",
+		});
+	});
+	$("[setBackgroundRepeat]").each(function () {
+		var background = $(this).attr("setBackgroundRepeat");
+		$(this).css({
+			"background-image": "url(" + background + ")",
+			"background-repeat": "repeat",
+		});
+	});
 }
