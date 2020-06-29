@@ -11,6 +11,7 @@
     "bower_components/fancybox/dist/jquery.fancybox.js",
     "src/_plugins/mapping-listener.js",
     "src/_plugins/mapping.js",
+    "src/_plugins/data-bg.js",
     "bower_components/swiper/dist/js/swiper.js",
     "bower_components/jquery-nice-select/js/jquery.nice-select/min.js"
   ],

@@ -1,4 +1,8 @@
 footer
+	width: 100%
+	max-width: 100%
+	@media (min-width: 1280px)
+		max-width: 1440px
 	*
 		color: #ffffff
 	.container-custom
@@ -65,6 +69,8 @@ footer
 		display: flex
 		justify-content: flex-start
 		align-items: center
+	
+			
 		h2
 			margin-bottom: 0
 		.link-chat
@@ -84,6 +90,12 @@ footer
 					max-width: 100%
 					height: auto
 					max-height: 27px
+		@media screen and ( max-width: 1024px)
+			flex-direction: column
+			align-items: flex-start
+			.link-chat
+				margin-left: 0
+				margin-top: 15px
 	.row-footer-top
 		.col-12
 			@media screen and ( max-width: 1024px)
@@ -92,7 +104,7 @@ footer
 	.row-footer-bottom
 		margin-top: -60px
 		@media screen and ( max-width: 1024px)
-			margin-top: 15px
+			margin-top: 0
 		.col-12
 			display: flex
 			align-items: flex-end

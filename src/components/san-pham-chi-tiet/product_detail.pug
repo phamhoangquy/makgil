@@ -1,85 +1,114 @@
 section.product-detail
-    .container-custom
-        .container 
-            .row 
-                .col-lg-2
-                    .swiper-container
-                        .swiper-wrapper
-                            -for(i=1; i<4; i++)
-                                .swiper-slide
-                                    .img
-                                        img(src="./img/sp-chi-tiet/product-detail-"+i+".png", alt="")
-                .col-lg-4
-                    .swiper-container
-                        .swiper-wrapper 
-                            -for(i=1; i<4; i++)
-                                .swiper-slide 
-                                    .img 
-                                        img(src="./img/sp-chi-tiet/pro-detail-"+i+".png", alt="")
-                .col-lg-6
-                    .pro-detail
-                        .pro-name 
-                            a(href="") Cảm biến áp suất Autrol APT3100-A
-                        .pro-content 
-                            p Đặc điểm nổi bật. Hoạt động ổn định lâu dài, với chức năng tự chuẩn đoán liên tục trong phạm vi cao(100:1). Sản phẩm đo áp chế tạo hoàn toàn bằng inox cho phép chịu nhiệt độ và các môi trường ăn chất mòn.
-                        .pro-desc
-                            ul 
-                                li 
-                                    p Mã sản phẩm 
-                                    span APT3100
-                            ul 
-                                li 
-                                    p Nhà sản xuất 
-                                    span Autrol - Korea
-                            ul 
-                                li 
-                                    p Dải đo 
-                                    span 0 đến 2500 kPa
-                            ul 
-                                li 
-                                    p Khả năng hiệu chỉnh 
-                                    span 2,5 đến 2500 kPa
-                        .pro-price 
-                            ul 
-                                li 
-                                    a(href="") Giá
-                                    .button
-                                        button Liên hệ
-                                            em.mdi.mdi-phone
-                                                                                   
-                                
+	.container-custom
+		.container 
+			.row 
+				.col-lg-6
+					.swiper-product-wrapper
+						.swiper-product-thumbs
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/1.png", alt="")
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/2.png", alt="")
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/3.png", alt="")
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/4.png", alt="")
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/1.png", alt="")
+							.product-thumb-prev
+								em.lnr.lnr-chevron-up
+							.product-thumb-next
+								em.lnr.lnr-chevron-down 
+						.swiper-product-main
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide
+										.wrapper
+											img.zoom-lens(src='./img/product/3.png', data-zoom-image='./img/banner/1.png')
+									.swiper-slide
+										.wrapper
+											img.zoom-lens(src="./img/product/2.png", , data-zoom-image='./img/product/3.png')
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/3.png", alt="")
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/4.png", alt="")
+									.swiper-slide
+										.wrapper
+											img(src="./img/product/1.png", alt="")
+					
+				.col-lg-6
+					.pro-detail
+						.pro-name 
+							a(href="") Cảm biến áp suất Autrol APT3100-A
+						.pro-content 
+							p Đặc điểm nổi bật. Hoạt động ổn định lâu dài, với chức năng tự chuẩn đoán liên tục trong phạm vi cao(100:1). Sản phẩm đo áp chế tạo hoàn toàn bằng inox cho phép chịu nhiệt độ và các môi trường ăn chất mòn.
+						.pro-desc
+							ul 
+								li 
+									p Mã sản phẩm 
+									span APT3100
+							ul 
+								li 
+									p Nhà sản xuất 
+									span Autrol - Korea
+							ul 
+								li 
+									p Dải đo 
+									span 0 đến 2500 kPa
+							ul 
+								li 
+									p Khả năng hiệu chỉnh 
+									span 2,5 đến 2500 kPa
+						.pro-price 
+							ul 
+								li 
+									a(href="") Giá
+									.button
+										button Liên hệ
+											em.mdi.mdi-phone
+																				   
+								
 section.product-description
-    .container-custom
-        .container
-            .row 
-                .col-lg-12 
-                    .tab-panels
-                        ul 
-                            li 
-                                a(href="") Thông số kỹ thuật 
-                                a(href="") Tài liệu kỹ thuật 
-                                a(href="") Đánh giá
-                    .product--description
-                        .row
-                            .col-lg-6 
-                                .description
-                                    .content 
-                                        p Model APT3100-A là model chuyên dụng với môi trường đo áp suất tuyết đối
-                                        p Màn hình LCD hiển thị 5 chữ số, 3 dòng hiển thị LCD, nút ngoài, DAC, Zero Trim, Eng mode
-                                        p Dải đo: APT3100 có dải đo từ 0 đến 2500 kPa
-                                        p Khả năng hiệu chỉnh: 2,5 đến 2500 kPa
-                                        p Áp lực làm việc tối đa có thể: 5,25 MPa / 761 psi
-                                        p Độ chính xác cao + 0.075% (tùy chọn + 0.04%)
-                                        p Sai số rất thấp chỉ 0,065% trên toàn dãy đo
-                                        p Thời gian đáp ứng chỉ khoảng 10ms
-                                        p Tiêu chuẩn chóng nước, chống bụi IP67
-                                        p Cảm biến được chế tạo và kiểm định chất lượng theo tiêu chuẩn châu Âu
-                                        p Chuyên dụng cho dụng cụ đo áp suất CE EMC (EN50081-2, EN50082-2)
-                            .col-lg-6
-                                .pro-img 
-                                    .img
-                                        img(src="./img/sp-chi-tiet/pro-img-descript.png", alt="")
-                            .col-lg-12 
-                                .button
-                                    button Xem thêm
-                                        em.lnr.lnr-chevron-down
+	.container-custom
+		.container
+			.row 
+				.col-lg-12 
+					.tab-panels
+						ul 
+							li 
+								a(href="") Thông số kỹ thuật 
+								a(href="") Tài liệu kỹ thuật 
+								a(href="") Đánh giá
+					.product--description
+						.row
+							.col-lg-6 
+								.description
+									.content 
+										p Model APT3100-A là model chuyên dụng với môi trường đo áp suất tuyết đối
+										p Màn hình LCD hiển thị 5 chữ số, 3 dòng hiển thị LCD, nút ngoài, DAC, Zero Trim, Eng mode
+										p Dải đo: APT3100 có dải đo từ 0 đến 2500 kPa
+										p Khả năng hiệu chỉnh: 2,5 đến 2500 kPa
+										p Áp lực làm việc tối đa có thể: 5,25 MPa / 761 psi
+										p Độ chính xác cao + 0.075% (tùy chọn + 0.04%)
+										p Sai số rất thấp chỉ 0,065% trên toàn dãy đo
+										p Thời gian đáp ứng chỉ khoảng 10ms
+										p Tiêu chuẩn chóng nước, chống bụi IP67
+										p Cảm biến được chế tạo và kiểm định chất lượng theo tiêu chuẩn châu Âu
+										p Chuyên dụng cho dụng cụ đo áp suất CE EMC (EN50081-2, EN50082-2)
+							.col-lg-6
+								.pro-img 
+									.img
+										img(src="./img/sp-chi-tiet/pro-img-descript.png", alt="")
+							.col-lg-12 
+								.button
+									button Xem thêm
+										em.lnr.lnr-chevron-down
