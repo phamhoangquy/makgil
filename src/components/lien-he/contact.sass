@@ -2,7 +2,7 @@
 .banner-contact
     .card-img
         .img
-            height: 72vh
+            height: 452px
             img 
                 width: 100%
                 height: 100%
@@ -10,15 +10,28 @@
 
 @media (max-width: 576px )
     .banner-contact
-            .card-img
-                .img
-                    img 
-                        width: 100%
+        .card-img
+            .img
+                width: 100%
+                height: 300px
+                img 
+                    width: 100%
+                    height: 100%
+
+@media (max-width: 1024px )
+    .banner-contact
+        .card-img
+            .img
+                width: 100%
+                height: 300px
+                img 
+                    width: 100%
+                    height: 100%
 
 // form-contact
 .form-contact
     .card-title
-        margin: 40px 0 0 0
+        margin: 60px 0 0 0
         h1
             font-size: 30px
             color: #333333
@@ -29,7 +42,7 @@
         height: 450px
         background: #ffffff
         box-shadow: -2px 5px 10px 10px #f5f5f5
-        margin: 30px 0 0 0
+        margin: 65px 0 0 0
         .logo
             display: flex
             align-items: center
@@ -60,7 +73,7 @@
 						font-size: 16px
 						color: #5c5c5c
     .wrap-form
-        margin: 35px 0 0 0
+        margin: 75px 0 0 0
         @media screen and(max-width:1025px)
             margin: 0
             padding: 0 10px
@@ -150,12 +163,20 @@
         .left
             width: 100%
             height: 100%
+
+@media ( max-width: 576px )
+    .form-contact
+        .card-title
+            margin-top: 30px
+        .left 
+            margin-top: 30px
         
             
 // Map
 .map
     .map-wrapper
-        margin-top: 50px
+        margin-top: 65px
+        margin-bottom: 65px
         height: 100%
 
 @media (max-width: 992px )
@@ -172,6 +193,7 @@
     .map 
         .map-wrapper
             margin-top: 30px
+            margin-bottom: 30px
 
 @media (max-width: 767px )
     .map 
