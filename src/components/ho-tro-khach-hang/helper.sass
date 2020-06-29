@@ -1,101 +1,112 @@
 // section banner
 .banner-helper
-    .card-img
-        .img
-            height: 72vh
-            img 
-                width: 100%
-                height: 100%
-                object-fit: cover
+	.card-img
+		.img
+			height: 72vh
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
 
 // section helper
 .helper
-    .left
-        margin: 60px 0 0 0
-        .card-title
-            background: $azure
-            width: 100%
-            height: 60px
-            padding: 20px
-            margin: 0
-            h3 
-                font-size: 20px 
-                color: #ffffff
-        .card-body
-            width: 100%
-            height: 120px
-            display: flex
-            background: #f9f9f9
-            .img
-                img 
-                    width: 82px
-                    height: 74px
-                    object-fit: cover
-            .content
-                padding: 20px
-                width: 100%
-                height: 74px
-                a
-                    font-size: 16px
-                    color: #333333
-                    
-                    &:hover
-                        color: $azure
-                        text-decoration: none
-    .right
-        margin: 60px 0 0 0
-        .card-title
-            h1 
-                width: 100%
-                height: 60px
-                font-size: 30px 
-                color: #333333
-                border-bottom: 1px solid $azure
-        .support-wrapper
-            .toggle-item
-                margin-bottom: 1rem
-                border-bottom: 1px solid #e0e0e0
-                .title
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    height: 50px;
-                    span 
-                        color: #333;
-                        font-size: 1rem;
-                        
-        .button
-            display: flex
-            align-items: center
-            justify-content: center
-            margin-top: 20px
-            margin-bottom: 30px
-            button
-                width: 40px
-                height: 40px
-                border: 1px solid #f3f3f3
-                margin-left: 21px
-                background: #f3f3f3
-                color: #333333
-                &:hover
-                    background: #0267b1
-                    color: #ffffff
+	.left
+		margin: 60px 0 0 0
+		.card-title
+			background: $azure
+			width: 100%
+			height: 60px
+			padding: 20px
+			margin: 0
+			h3 
+				font-size: 20px 
+				color: #ffffff
+		.card-body
+			width: 100%
+			height: 120px
+			display: flex
+			background: #f9f9f9
+			.img
+				img 
+					width: 82px
+					height: 74px
+					object-fit: cover
+			.content
+				padding: 20px
+				width: 100%
+				height: 74px
+				a
+					font-size: 16px
+					color: #333333
+					
+					&:hover
+						color: $azure
+						text-decoration: none
+	.right
+		margin: 60px 0 0 0
+		.card-title
+			h1 
+				width: 100%
+				height: 60px
+				font-size: 30px 
+				color: #333333
+				border-bottom: 1px solid $azure
+		.support-wrapper
+			.toggle-item
+				margin-bottom: 1rem
+				border-bottom: 1px solid #e0e0e0
+				.title
+					display: flex
+					align-items: center
+					justify-content: space-between
+					height: 50px
+					transition: .3s all  ease-in-out
+					span 
+						color: #333
+						font-size: 1rem
+						transition: .3s all  ease-in-out
+					em
+						transition: .3s all  ease-in-out
+				&.active
+					.title
+						span
+							color: $azure
+						em
+							transform: rotate(-180deg)
+			.article
+				display: none
+		.button
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-top: 20px
+			margin-bottom: 30px
+			button
+				width: 40px
+				height: 40px
+				border: 1px solid #f3f3f3
+				margin-left: 21px
+				background: #f3f3f3
+				color: #333333
+				&:hover
+					background: #0267b1
+					color: #ffffff
 
 @media ( max-width: 576px )
-    .helper
-        .left
-            margin-top: 20px
-        .right
-            margin-top: 20px
+	.helper
+		.left
+			margin-top: 20px
+		.right
+			margin-top: 20px
 
 @media ( max-width: 1024px )
-    .helper
-        .left
-            margin-top: 20px
-        .right
-            margin-top: 20px
+	.helper
+		.left
+			margin-top: 20px
+		.right
+			margin-top: 20px
 
 
 
-    
-                        
+	
+						

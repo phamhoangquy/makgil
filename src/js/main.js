@@ -5,6 +5,8 @@ $(document).ready(function () {
 	mappingContact();
 	mappingSearch();
 	setBackground();
+	toggleSupport();
+	toggleApplyForm();
 });
 //Check if windows size large then 1024 then these function will be execute
 if ($(window).width() > 1024) {
@@ -20,6 +22,30 @@ if ($(window).width() > 1024) {
 	});
 }
 // Remove when click outside the circle
+function toggleSupport() {
+	$(".toggle-item > .title").click(function (e) {
+		e.preventDefault();
+		if (
+			!$(this)
+			.parent()
+			.hasClass("active")
+		) {
+			$(".toggle-item .article").slideUp();
+			$(this)
+				.next()
+				.slideToggle();
+			$(".toggle-item").removeClass("active");
+			$(this)
+				.parent()
+				.addClass("active");
+		} else {
+			$(this)
+				.next()
+				.slideToggle();
+			$(".toggle-item").removeClass("active");
+		}
+	});
+}
 
 function tabActive() {
 	$(".tab-list-navigation li a").on("click", function () {
@@ -37,7 +63,11 @@ function tabActive() {
 	});
 }
 
-
+function toggleApplyForm() {
+	$(".apply-form .button-apply a").on("click", function () {
+		$(".form-apply").slideToggle();
+	});
+}
 function swiperInit() {
 	var homerSwiper = new Swiper(".home-product-zone .swiper-container", {
 		// Optional parameters
