@@ -1,6 +1,5 @@
 // Banner-about
 .banner-about
-<<<<<<< HEAD
     .card-img
         .img
             height: 452px
@@ -8,15 +7,6 @@
                 width: 100%
                 height: 100%
                 object-fit: cover
-=======
-	.card-img
-		.img
-			height: 72vh
-			img 
-				width: 100%
-				height: 100%
-				object-fit: cover
->>>>>>> 845111db9f93a516e975f868a585310d3329bb80
 
 @media (max-width: 576px )
     .banner-about
@@ -41,7 +31,6 @@
 
 // About
 .about
-<<<<<<< HEAD
     .card-title
         padding: 114px 0 33px 0
         h1 
@@ -66,59 +55,11 @@
                 width: 100%
                 height: 450px
                 object-fit: cover
-=======
-	padding: 60px 0 
-	@media screen and ( max-width:  1024px)
-		padding-bottom: 30px
-		
-	.row
-		.col-lg-6
-			@media screen and ( max-width: 1024px )
-				margin-bottom: 30px
-				
-	.wrapper
-		display: flex
-		flex-direction: column
-		height: 100%
-		justify-content: center
-	.card-title
-		margin-bottom: 30px
-		h1 
-			font-size: 30px
-	.card-body
-		padding: 0
-		.content 
-			padding: 20px 0 0 0
-			overflow: auto
-			width: 100%
-			height: 220px
-			back
-			padding-right: 30px
-			p 
-				text-align: justify
-				color: #414141
-	.over-flow-scollbar
-		font-size: 1rem
-		font-weight: 400
-		line-height: 1.2
-		margin-bottom: 20px
-		*
-			font-size: 1rem
-			font-weight: 400
-			line-height: 1.2
-			margin-bottom: 20px
-	.card-img
-		.img
-			width: 100%
-			img 
-				width: 100%
-				height: 450px
-				object-fit: cover
->>>>>>> 845111db9f93a516e975f868a585310d3329bb80
 
 @media ( max-width: 576px ) 
 	.about
 		.card-title
+			padding: 30px 0 0 0
 			h1 
 				font-size: 20px
 				font-weight: 600
@@ -134,7 +75,6 @@
 					height: 300px
 
 .about-2
-<<<<<<< HEAD
     background-image: url('../img/gioi-thieu/about-2.png')
     background-repeat: no-repeat
     background-size: cover
@@ -142,7 +82,7 @@
     margin: 60px 0 0 0
     width: 100%
     height: 432px
-    .left
+    .cards-l
         width: 100%
         height: 350px
         border-right: 1px solid #989c9d
@@ -150,22 +90,23 @@
         padding: 89px 192px 0 0
         p 
             em 
-                font-size: 50px
+                font-size: 20px
                 color: #ffffff
         .card-title
             h2
                 font-size: 20px
                 color: #ffffff
+				
         .content
             p 
                 font-size: 16px
                 text-align: justify
                 color: #ffffff
-    .right
+    .cards-r
         width: 100%
         height: 350px
         margin: 35px 0 0 0
-        padding: 89px 192px 0 0
+        padding: 89px 0 0 192px
         .card-title
             p 
                 em 
@@ -182,13 +123,13 @@
 
 @media (max-width: 992px)
     .about-2 
-        .left
+        .cards-l
             width: 100%
             height: 180px
             border: none
             margin: 0
             padding: 65px 0 0 0
-        .right
+        .cards-r
             width: 100%
             height: 180px
             margin: 0
@@ -196,13 +137,13 @@
 
 @media (max-width: 1024px)
     .about-2 
-        .left
+        .cards-l
             width: 100%
             height: 180px
             border: none
             margin: 0
             padding: 40px 0 0 0
-        .right
+        .cards-r
             width: 100%
             height: 180px
             margin: 0
@@ -210,7 +151,7 @@
 
 @media (max-width: 576px) 
     .about-2 
-        .left
+        .cards-l
             width: 100%
             height: 180px
             border: none
@@ -224,7 +165,7 @@
             .content
                 p 
                     font-size: 14px
-        .right
+        .cards-r
             padding: 50px 0 0 0
             .card-title
                 p 
@@ -304,137 +245,4 @@
 					height: auto
 					max-height: 100px
 
-//section about-3
-// .about-3
-//     .container
-//         position: relative
-//     .nav-arrow-prev,.nav-arrow-next
-//         position: absolute
-//         width: 40px
-//         height: 40px
-//         top: 60%
-//         display: flex
-//         justify-content: center
-//         align-items: center
-//         border: 2px solid $azure
-//         transition: .3s all  ease-in-out
-//         z-index: 99
-//         @media screen and ( max-width: 400px )
-//             top: 60%
-            
-//         &:hover,&:focus
-//             background: $azure
-//             em
-//                 color: #ffffff
-//         em
-//             transition: .3s all  ease-in-out
-//             color: $azure
-//             font-size: 18px
-//     .nav-arrow-next
-//         right: -60px
-//         @media screen and ( max-width: 1439px)
-//             right: -45px
-//         @media screen and ( max-width: 1350px)
-//             right: 0
-//         @media screen and ( max-width: 767px)
-//             right: 15px
-            
-//     .nav-arrow-prev
-//         left: -60px
-//         @media screen and ( max-width: 1439px)
-//             left: -45px
-//         @media screen and ( max-width: 1350px)
-//             left: 0
-//         @media screen and ( max-width: 767px)
-//             left: 15px
-//     .swiper-container
-//         @media screen and ( max-width: 1350px)
-//             margin: 0 50px
-//     .card_title
-//         margin: 40px 0 40px 0
-//         h3 
-//             font-size: 30px
-//             color: #333333
-//     .product-logo__slide
-//         display: flex
-//         .product-logo
-//             width: 100%
-//             .img
-//                 width: 100%
-//                 height: 125px
-//                 img 
-//                     width: 100%
-//                     height: 100%
-                    
-=======
-	margin: 0 
-	width: 100%
-	height: 432px
-	@media screen and ( max-width: 767px)
-		padding: 60px 0 30px 0
-		height: auto
-	*
-		color: #ffffff
-	.row
-		height: 100%
-		.col-12
-			@media screen and ( min-width: 767px )
-				&:first-child
-					position: relative
-					&:before
-						content: ''
-						display: block
-						position: absolute
-						pointer-events: none
-						right: 0
-						bottom: 50%
-						transform: translateY(50%)
-						z-index: 9
-						height: 80%
-						width: 1px
-						background: #a1a9af
-						transition: .3s all ease-in-out
-			@media screen and ( max-width:  1024px)
-				margin-bottom: 30px
-	.container-custom,.container
-		height: 100%
-	.cards
-		padding: 0 8.33%
-		height: 100%
-		display: flex
-		flex-direction: column
-		justify-content: center
-		@media screen and ( max-width:  1024px)
-			padding: 0
-		@media screen and ( max-width:  767px)
-			justify-content: center
-			align-items: center
-			.content
-				text-align: center
-			
-			
-	.card-title
-		.image-wrapper
-			img
-				width: 64px
-				max-width: 100%
-				height: auto
-			@media screen and ( max-width:  767px)
-				img
-					display: block 
-					margin: 0 auto
-				
-		h2
-			font-size: r(20px)
-			font-weight: 700
-			margin: 20px 0
-		
-	.content
-		strong
-			display: inline-block
-			margin-bottom: 15px
-			@media screen and ( max-width:  1024px)
-				margin-bottom: 10px
-				
->>>>>>> 845111db9f93a516e975f868a585310d3329bb80
 
