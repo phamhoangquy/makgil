@@ -21,6 +21,7 @@ if ($(window).width() > 1024) {
 		}
 	});
 }
+
 // Remove when click outside the circle
 function toggleSupport() {
 	$(".toggle-item > .title").click(function (e) {
@@ -302,7 +303,6 @@ function swiperInit() {
 
 
 function toggleMobileMenu() {
-
 	$(".mobile-toggle").on("click", function () {
 		$(".mobile-wrapper").toggleClass("active");
 	});
