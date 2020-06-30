@@ -338,7 +338,6 @@ function watchMore() {
 
 
 function toggleMobileMenu() {
-
 	$(".mobile-toggle").on("click", function () {
 		$(".mobile-wrapper").toggleClass("active");
 	});
