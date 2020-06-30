@@ -20,3 +20,56 @@
 			@media screen and ( max-width: 420px )
 				flex: 0 0 100%
 				max-width: 100%
+.product-display-container
+.other-product
+	padding: 60px 0
+	@media screen and ( max-width:  1024px)
+		padding: 50px 0
+	.other-product-wrapper
+		position: relative
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 30%
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 2px solid $azure
+		transition: .3s all  ease-in-out
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover,&:focus
+			background: $azure
+			em
+				color: #ffffff
+		em
+			transition: .3s all  ease-in-out
+			color: $azure
+			font-size: 18px
+	.nav-arrow-next
+		right: -60px
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: 0
+			
+	.nav-arrow-prev
+		left: -60px
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: 0
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 50px

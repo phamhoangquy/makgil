@@ -7,13 +7,11 @@
   ],
   "js": [
     "bower_components/jquery/dist/jquery.min.js",
-    "bower_components/bootstrap/dist/js/bootstrap.min.js",
     "bower_components/fancybox/dist/jquery.fancybox.js",
+    "bower_components/swiper/dist/js/swiper.js",
     "src/_plugins/mapping-listener.js",
     "src/_plugins/mapping.js",
-    "src/_plugins/data-bg.js",
-    "bower_components/swiper/dist/js/swiper.js",
-    "bower_components/jquery-nice-select/js/jquery.nice-select/min.js"
+    "src/_plugins/data-bg.js"
   ],
   "css": [
     "src/_plugins/font.css",

@@ -1,0 +1,71 @@
+.side-navigation-wrapper
+	.title-wrapper
+		padding: 20px
+		height: 60px
+		background: $azure
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		h2
+			color: #ffffff
+			font-size: 20px
+			font-weight: 600
+			text-align: left
+			text-transform: uppercase
+		@media screen and(max-width:1025px)
+			height: 40px
+			h2
+				font-size: 22px
+	.side-navigation
+		list-style-type: none
+		background: #f9f9f9
+		margin: 0
+		padding: 0
+		transition: .3s all  ease-in-out
+		>li
+			transition: .3s all  ease-in-out
+			&.open
+				background: #eeeeee
+				.title
+					border-color: #f9f9f9
+					a
+						color: $azure
+					em
+						color: $azure
+				.nav-sub
+					display: block 
+			&:last-child
+				.title
+					border-bottom: 0
+			.title
+				display: flex
+				justify-content: space-between
+				align-items: center
+				padding: 14px 20px
+				border-top: 1px solid #f9f9f9
+				border-bottom: 1px solid #e1e1e1
+				height: 40px
+				transition: .3s all  ease-in-out
+				a
+					width: 70%
+					font-weight: 500
+					color: #333333
+					font-size: 1rem
+				em
+					width: 30%
+					text-align: right
+			.nav-sub
+				padding: 0 40px
+				list-style: none
+				display: none
+				li
+					&.active
+						a
+							color: $azure
+					a
+						transition: .3s all  ease-in-out
+						font-size: 16px
+						font-weight: 400
+						padding: 10px 0
+						display: block
+						color: #333333

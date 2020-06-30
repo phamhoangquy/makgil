@@ -114,27 +114,10 @@
 
 										</div>
 										<div class="col-12 col-sm-6 col-lg-2">
-											<h2>Về makgil</h2>
-											<ul>
-												<li><a href="#"> tổng quan</a></li>
-												<li><a href="#"> Tin tức </a></li>
-												<li><a href="#">Tuyển dụng</a></li>
-												<li><a href="#">Đối tác</a></li>
-												<li><a href="#">Liên hệ</a></li>
-											</ul>
+											<portal:modulewrapper id="mdl243" runat="server" configuremoduleid="243" />
 										</div>
 										<div class="col-12 col-sm-6 col-lg-3">
-											<h2>Sản phẩm - thương hiệu</h2>
-											<ul>
-												<li><a href="#">thiết bị đo áp suất</a></li>
-												<li><a href="#"> Thiết bị đo nhiệt độ</a></li>
-												<li><a href="#">Thiết bị đo mức</a></li>
-												<li><a href="#">Thiết bị chống cháy nổ</a></li>
-												<li><a href="#">Valve</a></li>
-												<li><a href="#">Valve & Tube Fitting</a></li>
-												<li><a href="#">Keo công nghiệp</a></li>
-												<li><a href="#">Phụ kiện đường ống</a></li>
-											</ul>
+											<portal:modulewrapper id="mdl244" runat="server" configuremoduleid="244" />
 										</div>
 										<div class="col-12 col-sm-6 col-lg-3">
 											<portal:modulewrapper id="mdl192" runat="server" configuremoduleid="192" />
@@ -145,24 +128,32 @@
 											<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
 										</div>
 										<div class="col-12 col-sm-6 col-lg-3">
-											<div class="verify-image"><a href="#"><img src="./img/ver.png" alt=""></a>
+											<div class="verify-image">
+												<portal:modulewrapper id="mdl245" runat="server"
+													configuremoduleid="245" />
 											</div>
 										</div>
 										<div class="col-12 col-lg-3">
 											<div class="subscrible-wrapper">
-												<h2>Đăng ký nhận bản tin</h2>
-												<div class="subsrcibe">
-													<div class="subscribefrm">
-														<input type="text" placeholder="Enter your email">
-														<button><em class="mdi mdi-arrow-right"></em></button>
-													</div>
-												</div>
+												<portal:modulewrapper id="mdl249" runat="server"
+													configuremoduleid="249" />
+												<portal:modulewrapper id="mdl247" runat="server"
+													configuremoduleid="247" />
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="container">
-									<portal:modulewrapper id="mdl195" runat="server" configuremoduleid="195" />
+									<div class="footer-bottom-wrapper">
+										<div class="copy-right">
+											<portal:modulewrapper id="mdl195" runat="server" configuremoduleid="195" />
+
+										</div>
+										<div class="web-counter">
+											<portal:modulewrapper id="mdl246" runat="server" configuremoduleid="246" />
+
+										</div>
+									</div>
 								</div>
 							</div>
 						</section>
@@ -264,6 +255,9 @@
 	</form>
 	<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
 	<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
+		nonce="gY3jBjBZ"></script>
 </body>
 
 </html>

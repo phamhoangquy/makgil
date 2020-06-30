@@ -22,11 +22,11 @@
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 				</span><em class="lnr lnr-chevron-down"></em></div>
-			<div class="article">
+			<article>
 				<div class="caption">
 					<xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
 				</div>
-			</div>
+			</article>
 		</div>
 	</xsl:template>
 
