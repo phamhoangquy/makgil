@@ -29,10 +29,34 @@
 					height: 100%
 
 
+// Banner-about
+.banner-about
+	.card-img
+		.img
+			height: 72vh
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
+
 // About
 .about
+	padding: 60px 0 
+	@media screen and ( max-width:  1024px)
+		padding-bottom: 30px
+		
+	.row
+		.col-lg-6
+			@media screen and ( max-width: 1024px )
+				margin-bottom: 30px
+				
+	.wrapper
+		display: flex
+		flex-direction: column
+		height: 100%
+		justify-content: center
 	.card-title
-		padding: 114px 0 33px 0
+		margin-bottom: 30px
 		h1 
 			font-size: 30px
 	.card-body
@@ -47,8 +71,17 @@
 			p 
 				text-align: justify
 				color: #414141
+	.over-flow-scollbar
+		font-size: 1rem
+		font-weight: 400
+		line-height: 1.2
+		margin-bottom: 20px
+		*
+			font-size: 1rem
+			font-weight: 400
+			line-height: 1.2
+			margin-bottom: 20px
 	.card-img
-		padding: 60px 0 0 0
 		.img
 			width: 100%
 			img 
@@ -59,7 +92,6 @@
 @media ( max-width: 576px ) 
 	.about
 		.card-title
-			padding: 30px 0 0 0
 			h1 
 				font-size: 20px
 				font-weight: 600
@@ -73,6 +105,78 @@
 				img 
 					width: 100%
 					height: 300px
+
+.about-2
+	margin: 0 
+	width: 100%
+	height: 432px
+	@media screen and ( max-width: 767px)
+		padding: 60px 0 30px 0
+		height: auto
+	*
+		color: #ffffff
+	.row
+		height: 100%
+		.col-12
+			@media screen and ( min-width: 767px )
+				&:first-child
+					position: relative
+					&:before
+						content: ''
+						display: block
+						position: absolute
+						pointer-events: none
+						right: 0
+						bottom: 50%
+						transform: translateY(50%)
+						z-index: 9
+						height: 80%
+						width: 1px
+						background: #a1a9af
+						transition: .3s all ease-in-out
+			@media screen and ( max-width:  1024px)
+				margin-bottom: 30px
+	.container-custom,.container
+		height: 100%
+	.cards
+		padding: 0 8.33%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		@media screen and ( max-width:  1024px)
+			padding: 0
+		@media screen and ( max-width:  767px)
+			justify-content: center
+			align-items: center
+			.content
+				text-align: center
+			
+			
+	.card-title
+		.image-wrapper
+			img
+				width: 64px
+				max-width: 100%
+				height: auto
+			@media screen and ( max-width:  767px)
+				img
+					display: block 
+					margin: 0 auto
+				
+		h2
+			font-size: r(20px)
+			font-weight: 700
+			margin: 20px 0
+		
+	.content
+		strong
+			display: inline-block
+			margin-bottom: 15px
+			@media screen and ( max-width:  1024px)
+				margin-bottom: 10px
+				
+
 
 .about-2
 	background-image: url('../img/gioi-thieu/about-2.png')

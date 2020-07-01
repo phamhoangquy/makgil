@@ -30,8 +30,11 @@
 
 // section helper
 .helper
+	padding: 60px 0
+	@media screen and ( max-width: 1024px)
+		padding: 50px 0
+		
 	.left
-		margin: 60px 0 0 0
 		.card-title
 			background: $azure
 			width: 100%
@@ -56,14 +59,17 @@
 				width: 100%
 				height: 74px
 				a
+					display: block
+					padding-bottom: 10px
 					font-size: 16px
 					color: #333333
+					&:last-child
+						padding-bottom: 0
 					
 					&:hover
 						color: $azure
 						text-decoration: none
 	.right
-		margin: 60px 0 0 0
 		.card-title
 			h1 
 				width: 100%
@@ -73,13 +79,15 @@
 				border-bottom: 1px solid $azure
 		.support-wrapper
 			.toggle-item
-				margin-bottom: 1rem
+				margin-bottom: 0
+				
 				border-bottom: 1px solid #e0e0e0
 				.title
+					padding: 10px 0
 					display: flex
 					align-items: center
 					justify-content: space-between
-					height: 50px
+					min-height: 50px
 					transition: .3s all  ease-in-out
 					span 
 						color: #333
@@ -95,6 +103,8 @@
 							transform: rotate(-180deg)
 			article
 				display: none
+				.caption
+					padding-bottom: 15px
 		.button
 			display: flex
 			align-items: center
