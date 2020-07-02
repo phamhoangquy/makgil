@@ -13,7 +13,8 @@
 								<h1>
 									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/Title">
 									</xsl:value-of>
-									<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes"></xsl:value-of>
+									<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes">
+									</xsl:value-of>
 								</h1>
 								<time>
 									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/CreatedDate">
@@ -22,13 +23,16 @@
 							</div>
 							<div class="card-body">
 								<xsl:if test="count(/NewsDetail/NewsAttributes)>0">
-									<table class="table table-striped">
-										<tbody>
+									<div class="table-striped-detail-wrapper">
 
-											<xsl:apply-templates select="/NewsDetail/NewsAttributes">
-											</xsl:apply-templates>
-										</tbody>
-									</table>
+										<table class="table table-striped">
+											<tbody>
+
+												<xsl:apply-templates select="/NewsDetail/NewsAttributes">
+												</xsl:apply-templates>
+											</tbody>
+										</table>
+									</div>
 								</xsl:if>
 								<div class="fullcontent">
 									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/FullContent">
@@ -74,7 +78,7 @@
 	<xsl:template match="NewsAttributes">
 		<tr>
 			<th scope="row">
-				<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of> <xsl:text disable-output-escaping="yes">:</xsl:text>
+				<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 			</th>
 			<td>
 				<xsl:value-of disable-output-escaping="yes" select="Content"></xsl:value-of>

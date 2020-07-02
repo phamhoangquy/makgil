@@ -26,11 +26,13 @@
 					<xsl:text>active</xsl:text>
 				</xsl:attribute>
 			</xsl:if>
-
+			<xsl:attribute name="class">
+				<xsl:text disable-output-escaping="yes">drop-down</xsl:text>
+			</xsl:attribute>
 			<xsl:if test="count(Zone)> 0">
 				<xsl:if test="IsActive='true'">
 					<xsl:attribute name="class">
-						<xsl:text>active open</xsl:text>
+						<xsl:text> drop-down active open</xsl:text>
 					</xsl:attribute>
 				</xsl:if>
 				<div class="title"><a>

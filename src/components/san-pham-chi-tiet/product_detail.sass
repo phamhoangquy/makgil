@@ -47,15 +47,23 @@
 						align-items: center
 						justify-content: center
 						padding: 10px 0 0 20px
-						button
+						a
+							display: flex
+							padding: 0
+							justify-content: center
+							align-items: center
+							al
 							width: 145px
 							height: 45px
 							margin: 10px 0 0 0
 							border: 1px solid #222
-							font: 16px Inter,sans-serif
+							font-size: 16px
 							background: $azure
 							border: none
 							color: #ffffff
+							span
+								color: #ffffff
+								font-size: 16px
 							em
 								padding-left: 15px
 @media (max-width: 576px)
@@ -270,7 +278,7 @@
 					transform: rotate(-90deg)
 		.swiper-container
 			margin-top: 40px
-			max-height: 330px
+			min-height: 330px
 			height: 100%
 			width: 100%
 			@media screen and(max-width:1025px)

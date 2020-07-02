@@ -14,8 +14,9 @@
 			text-transform: uppercase
 		@media screen and(max-width:1025px)
 			height: 40px
+			font-size: 
 			h2
-				font-size: 22px
+				font-size: 16px
 	.side-navigation
 		list-style-type: none
 		background: #f9f9f9
@@ -47,13 +48,19 @@
 				height: 40px
 				transition: .3s all  ease-in-out
 				a
-					width: 70%
 					font-weight: 500
 					color: #333333
 					font-size: 1rem
-				em
-					width: 30%
-					text-align: right
+			&.drop-down
+				.title
+					a
+						width: 70%
+						font-weight: 500
+						color: #333333
+						font-size: 1rem
+					em
+						width: 30%
+						text-align: right
 			.nav-sub
 				padding: 0 40px
 				list-style: none

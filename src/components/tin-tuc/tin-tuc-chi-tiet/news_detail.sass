@@ -1,8 +1,9 @@
 .news-detail
+	padding: 60px 0
+	@media screen and ( max-width: 1024px)
+		padding: 40px 0 50px 
 	.card-title
-		padding: 66px 0 0 0
 		width: 100%
-	   	height: 100%
 		h1 
 			font-size: 20px
 			color: #333333
@@ -36,19 +37,21 @@
 	.fullcontent
 		font-size: 16px
 		padding: 20px 0 0 0
-		ol 
+		ol,ul
+			list-style-type: none
+
 			padding: 0
-			li 
-				text-align: justify
-				img 
-					width: 100%
-					height: 500px
-					display: flex
-					align-items: center
-					justify-content: center
-					object-fit: cover
-					padding-top: 30px
-					padding-bottom: 30px
+		strong
+			color: $azure
+		img
+			max-width: 100%
+			height: auto
+			display: block
+			margin: 1rem auto
+		p
+			font-size: 1rem
+			color: #333333
+			margin-bottom: 10px
 	.card-imgg
 		.img
 			width: 100%
@@ -65,7 +68,6 @@
 			color: #61a6d5
 			font-size: 18px
 	.right-news
-		padding: 66px 0 0 0
 		.card-title
 			background: $azure
 			width: 100%
@@ -113,8 +115,7 @@
 			h2 
 				font-size: 20px
 		.right-news
-			margin-top: -70px
-			margin-bottom: 35px
+			margin-bottom: 0
 			.card-title
 				h3 
 					text-align: left
@@ -147,8 +148,7 @@
 				font-size: 14px
 			p 
 				font-size: 13px
-		.right-news
-			margin-top: -80px
+
 				
 	
 .social-network-share
