@@ -3,7 +3,7 @@
 	xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
 	<xsl:output method="html" indent="yes" />
 	<xsl:template match="/">
-		<div class="container-custom">
+		<div class="container-custom brand-detail-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-3">

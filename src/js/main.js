@@ -7,8 +7,9 @@ $(document).ready(function () {
 	setBackground();
 	sideNavigation();
 	tabActive();
-	watchMore();
+	watchMoreDetail();
 	// toggleSupport()
+	appendComment();
 });
 
 //Check if windows size large then 1024 then these function will be execute
@@ -23,24 +24,6 @@ if ($(window).width() > 1024) {
 			$menu.removeClass("active");
 		}
 	});
-}
-
-function sideNavigation() {
-	// let trigger = $('.side-navigation-wrapper .side-navigation .title em');
-	// let close = $('.side-navigation-wrapper .side-navigation  .nav-sub');
-	// let parent = $('.side-navigation-wrapper .side-navigation  li');
-	// trigger.on('click', function (e) {
-	// 	e.preventDefault();
-	// 	if (!$(this).parent().parent().hasClass("open")) {
-	// 		close.slideUp();
-	// 		$(this).parent().next().slideToggle();
-	// 		parent.removeClass('open')
-	// 		$(this).parents('li').addClass('open')
-	// 	} else {
-	// 		$(this).parent().next().slideToggle();
-	// 		parent.removeClass('open')
-	// 	}
-	// })
 }
 
 function tabActive() {
@@ -195,45 +178,45 @@ function swiperInit() {
 
 	});
 
-		var otherProduct = new Swiper(".other-product .swiper-container", {
-			// Optional parameters
-			speed: 1000,
-			autoplay: {
-				delay: 2000
+	var otherProduct = new Swiper(".other-product .swiper-container", {
+		// Optional parameters
+		speed: 1000,
+		autoplay: {
+			delay: 2000
+		},
+		navigation: {
+			nextEl: '.other-product .nav-arrow-next',
+			prevEl: '.other-product .nav-arrow-prev',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+
 			},
-			navigation: {
-				nextEl: '.other-product .nav-arrow-next',
-				prevEl: '.other-product .nav-arrow-prev',
+			400: {
+				slidesPerView: 2,
+
 			},
-			breakpointsInverse: true,
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
+			480: {
+				slidesPerView: 2,
 
-				},
-				400: {
-					slidesPerView: 2,
-
-				},
-				480: {
-					slidesPerView: 2,
-
-				},
-				768: {
-					slidesPerView: 3,
-
-				},
-				1025: {
-					slidesPerView: 4,
-
-				},
-				1440: {
-					slidesPerView: 5,
-
-				},
 			},
+			768: {
+				slidesPerView: 3,
 
-		});
+			},
+			1025: {
+				slidesPerView: 4,
+
+			},
+			1440: {
+				slidesPerView: 5,
+
+			},
+		},
+
+	});
 
 
 
@@ -332,9 +315,6 @@ function swiperInit() {
 	})
 }
 
-function watchMore() {
-
-}
 
 
 function toggleMobileMenu() {
@@ -393,3 +373,125 @@ function setBackground() {
 		});
 	});
 }
+
+function watchMoreDetail() {
+
+
+	let watchMore = $(".product-detail-wrapper .btn-view-more");
+	let article = $(".product-detail-wrapper  article");
+	let maxHeight = 400;
+	let height = 0;
+	let cotent = $(".product-detail-wrapper  article .fullcontent");
+	let pArray = $(".product-detail-wrapper  article .fullcontent").children();
+	watchMore.on("click", function () {
+		if ($(this).parents('article').hasClass('active')) {
+			cotent.css({
+				"max-height": 400 + "px"
+			});
+			article.removeClass("active");
+			$(this).removeClass('open')
+		} else {
+			$.each(pArray, function (indexInArray, valueOfElement) {
+				// height.push(element.height());
+
+				height += $(valueOfElement).height();
+			});
+			cotent.not($(this).parents("article").find('.fullcontent')).css({
+				"max-height": 400 + "px"
+			});
+			article.not($(this).parents("article")).removeClass("active");
+			$(this).addClass('open')
+			$(this).parents("article").find('.fullcontent').css({
+				"max-height": maxHeight + height + "px"
+			});
+			$(this).parents("article").addClass("active");
+			$("html, body").animate({
+				scrollTop: $(this).parents('.fullcontent').offset().top - 20
+			});
+		}
+	});
+
+
+}
+
+function sideNavigation() {
+	let trigger = $('.side-navigation-wrapper .side-navigation .title em');
+	let close = $('.side-navigation-wrapper .side-navigation  .nav-sub');
+	let parent = $('.side-navigation-wrapper .side-navigation  li');
+	trigger.on('click', function (e) {
+		e.preventDefault();
+		if (!$(this).parent().parent().hasClass("open")) {
+			close.slideUp();
+			$(this).parent().next().slideToggle();
+			parent.removeClass('open')
+			$(this).parents('li').addClass('open')
+		} else {
+			$(this).parent().next().slideToggle();
+			parent.removeClass('open')
+		}
+	})
+
+}
+
+
+
+function appendComment() {
+	if ($("body").hasClass('product-detail-page')) {
+		$('.commentpanel').appendTo('.product-detail-commment')
+	}
+}
+
+
+// $(window).on('load', function () {
+// 	let watchMore = $(".product-detail-wrapper .btn-view-more");
+// 	let article = $(".product-detail-wrapper  article");
+// 	let maxHeight = 400;
+// 	let height = 0;
+// 	let cotent = $(".product-detail-wrapper  article .fullcontent");
+// 	let pArray = $(".product-detail-wrapper  article .fullcontent").children();
+// 	watchMore.on("click", function () {
+// 		if ($(this).parents('article').hasClass('active')) {
+// 			cotent.css({
+// 				"max-height": 400 + "px"
+// 			});
+// 			article.removeClass("active");
+// 			// $(this).find('a').text("Xem thêm")
+// 		} else {
+// 			$.each(pArray, function (indexInArray, valueOfElement) {
+// 				// height.push(element.height());
+
+// 				height += $(valueOfElement).height();
+// 			});
+// 			cotent.not($(this).parents("article").find('.fullcontent')).css({
+// 				"max-height": 400 + "px"
+// 			});
+// 			article.not($(this).parents("article")).removeClass("active");
+// 			// $(this).find('a').text("Ẩn đi")
+// 			$(this).parents("article").find('.fullcontent').css({
+// 				"max-height": maxHeight + height + "px"
+// 			});
+// 			$(this).parents("article").addClass("active");
+// 			$("html, body").animate({
+// 				scrollTop: $(this).parents('.fullcontent').offset().top - 20
+// 			});
+// 		}
+// 	});
+
+
+
+// 	let trigger = $('.side-navigation-wrapper .side-navigation .title em');
+// 	let close = $('.side-navigation-wrapper .side-navigation  .nav-sub');
+// 	let parent = $('.side-navigation-wrapper .side-navigation  li');
+// 	trigger.on('click', function (e) {
+// 		e.preventDefault();
+// 		if (!$(this).parent().parent().hasClass("open")) {
+// 			close.slideUp();
+// 			$(this).parent().next().slideToggle();
+// 			parent.removeClass('open')
+// 			$(this).parents('li').addClass('open')
+// 		} else {
+// 			$(this).parent().next().slideToggle();
+// 			parent.removeClass('open')
+// 		}
+// 	})
+// });

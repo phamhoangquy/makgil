@@ -1,21 +1,22 @@
 {
-  "font": [
-    "bower_components/mdi/fonts/**",
-    "bower_components/font-awesome/webfonts/**",
-    "bower_components/linearicons/dist/web-font/fonts/**",
-    "src/fonts/**"
-  ],
-  "js": [
-    "bower_components/jquery/dist/jquery.min.js",
-    "bower_components/fancybox/dist/jquery.fancybox.js",
-    "bower_components/swiper/dist/js/swiper.js",
-    "src/_plugins/mapping-listener.js",
-    "src/_plugins/mapping.js",
-    "src/_plugins/data-bg.js"
-  ],
-  "css": [
-    "src/_plugins/font.css",
-    "src/_plugins/grid.css",
-    "bower_components/swiper/dist/css/swiper.css"
-  ]
+	"font": [
+		"bower_components/mdi/fonts/**",
+		"bower_components/font-awesome/webfonts/**",
+		"bower_components/linearicons/dist/web-font/fonts/**",
+		"src/fonts/**"
+	],
+	"js": [
+		"bower_components/jquery/dist/jquery.min.js",
+		"bower_components/fancybox/dist/jquery.fancybox.js",
+		"bower_components/swiper/dist/js/swiper.js",
+		"src/_plugins/mapping-listener.js",
+		"src/_plugins/mapping.js",
+		"src/_plugins/data-bg.js"
+	],
+	"css": [
+		"src/_plugins/font.css",
+		"src/_plugins/grid.css",
+		"bower_components/swiper/dist/css/swiper.css",
+		"src/_plugins/comment.css"
+	]
 }

@@ -1,0 +1,74 @@
+.journalContent,.journalInfo
+	display: none
+.journalPlaceholder
+	@apply text-center underline cursor-pointer
+.journalEditor
+	input
+		border: 1px solid #bbb
+		@apply px-4 w-full mb-4
+		height: 40px
+		border-radius: 5px
+	textarea
+		border: 1px solid #bbb !important
+		@apply px-4 py-4 w-full mb-4
+		height: 6rem
+		border-radius: 5px
+.journalrow ul.jcmt li textarea
+	border: 1px solid #bbb !important
+	@apply px-4 py-4 w-full mb-4
+	height: 6rem
+	border-radius: 5px
+.jcmt .cmteditor
+	max-width: 100%
+.journalInfo
+	@apply mb-4
+	.btnShare 
+		@apply text-primary flex text-center cursor-pointer items-center justify-center text-16 font-normal text-center cursor-pointer mx-auto mt-4
+		transition: .3s all ease-in-out
+		vertical-align: top
+		border-radius: 20px
+		border: 1px solid $main
+		height: 45px
+		padding: 0 15px
+		max-width: 200px
+		@media screen and ( max-width:1024px)
+			@apply text-18
+		&::first-letter
+			text-transform: uppercase
+		&:hover
+			@apply text-white bg-primary
+.commentpanel
+	padding: 0
+
+.editorPlaceholder
+	display: none
+.jsummary,.journalitem
+	.cmreport
+		margin-left: 10px
+		&:hover
+			color: red
+	.cmlike,.cmreply,abbr,span
+		font-size: 12px !important
+		span
+			font-size: 12px !important
+			margin: 0 2px
+.journalfooter
+	margin-top: 5px
+.searchresults 
+	main
+		padding-top: 50px
+		@media screen and ( max-width: 1024px)
+			padding-top: 15px
+.fancybox-close-small
+	svg
+		opacity: 0
+.news-display-section,.news-detail-page
+	.top-banner
+		@apply hidden
+	.global-breadcrumb
+		padding-top: 100px
+		@media screen and ( max-width:1024px)
+			padding-top: 60px
+	.blog-display,.blog-detail-wrapper,.gallery-display,.video-display
+		@media screen and ( max-width:400px)
+			@apply pt-32

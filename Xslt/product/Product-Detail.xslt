@@ -113,7 +113,7 @@
 					<div class="tab-wrapper">
 						<xsl:apply-templates select="/ProductDetail/ProductAttributes"></xsl:apply-templates>
 						<div class="tab-item" id="product-tab-3">
-							<div class="product--description">
+							<div class="product--description product-detail-commment">
 								<!-- <div class="col-lg-6">
 										<div class="description">
 											<div class="content">
@@ -169,7 +169,8 @@
 							<div class="col-lg-12">
 								<div class="btn-wrapper-center">
 									<div class="btn-view-more">
-										<span>Xem thêm</span>
+										<span class='view-more-text'>Xem thêm</span>
+										<span class='view-less-text'>Thu gọn</span>
 										<em class="lnr lnr-chevron-down"></em>
 									</div>
 								</div>
