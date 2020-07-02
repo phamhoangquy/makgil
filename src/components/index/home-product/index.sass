@@ -59,6 +59,12 @@
 				font-weight: 400
 				display: block
 				position: relative
+				overflow: hidden
+				display: -webkit-box
+				text-overflow: ellipsis
+				-webkit-box-orient: vertical
+				&-2 
+				-webkit-line-clamp: 2	
 				&:before
 					content: ''
 					display: block
@@ -100,3 +106,9 @@
 		h2
 			font-size: r(12px)
 			font-weight: 400
+			overflow: hidden
+			display: -webkit-box
+			text-overflow: ellipsis
+			-webkit-box-orient: vertical
+			&-2 
+			-webkit-line-clamp: 2	
