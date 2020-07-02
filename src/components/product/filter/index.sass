@@ -1,3 +1,7 @@
+.brand-detail-custom
+	.side-navigation
+		>li
+			.title
 .side-navigation-wrapper
 	.title-wrapper
 		padding: 20px
@@ -14,8 +18,9 @@
 			text-transform: uppercase
 		@media screen and(max-width:1025px)
 			height: 40px
+			font-size: 
 			h2
-				font-size: 22px
+				font-size: 16px
 	.side-navigation
 		list-style-type: none
 		background: #f9f9f9
@@ -44,21 +49,30 @@
 				padding: 14px 20px
 				border-top: 1px solid #f9f9f9
 				border-bottom: 1px solid #e1e1e1
-				height: 40px
+				min-height: 40px
 				transition: .3s all  ease-in-out
 				a
-					width: 70%
 					font-weight: 500
 					color: #333333
 					font-size: 1rem
-				em
-					width: 30%
-					text-align: right
+			&.drop-down
+				.title
+					a
+						width: 70%
+						font-weight: 500
+						color: #333333
+						font-size: 1rem
+					em
+						width: 30%
+						text-align: right
 			.nav-sub
 				padding: 0 40px
 				list-style: none
 				display: none
 				li
+					&:last-child
+						a
+							padding-bottom: 20px
 					&.active
 						a
 							color: $azure

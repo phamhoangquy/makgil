@@ -15,7 +15,7 @@
 		</section>
 	</xsl:template>
 	<xsl:template match="Product">
-		<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+		<div class="col-6 col-md-4 col-lg-3">
 			<div class="figure-product">
 				<div class="figure-image zoom-in">
 					<a>

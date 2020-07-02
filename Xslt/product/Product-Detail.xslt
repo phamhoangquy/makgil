@@ -63,9 +63,11 @@
 								</div>
 								<div class="pro-price">
 									<ul>
-										<li> <a href="">Giá</a>
+										<li> <a>Giá</a>
 											<div class="button">
-												<button>Liên hệ<em class="mdi mdi-phone"></em></button>
+												<a href="/lien-he">
+													<span>Liên hệ</span>
+													<em class="mdi mdi-phone"></em></a>
 											</div>
 										</li>
 									</ul>
