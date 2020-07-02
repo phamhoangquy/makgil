@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-3">
-						<div class="side-navigation-wrapper">
+						<div class="side-navigation-wrapper brand-detail-custom">
 							<div class="title-wrapper">
 								<h2>
 									<xsl:value-of disable-output-escaping="yes"
@@ -18,7 +18,8 @@
 								<xsl:apply-templates select="/ManufacturerDetail/Zone"></xsl:apply-templates>
 							</ul>
 						</div>
-						<div class="col-12 col-lg-9"></div>
+					</div>
+					<div class="col-12 col-lg-9">
 						<section class="product-display">
 							<h2 class="head-title">
 								<!--<xsl:value-of disable-output-escaping="yes" select="/ManufacturerDetail/ZoneTitle"></xsl:value-of>-->
@@ -31,7 +32,6 @@
 				</div>
 			</div>
 		</div>
-
 	</xsl:template>
 
 	<xsl:template match="Zone">
