@@ -1,19 +1,19 @@
 .product-detail
-	margin: 60px 0 0 0
+	padding: 60px 0 0 0
 	.pro-detail 
 		padding: 20px
 		background-color: #fff
 		.pro-name
-			padding-bottom: 20px 
+			padding-bottom: 20px
 			a 
 				font-size: 30px 
 				color: $azure
 				font-weight: 500
 		.pro-content
-			padding-bottom: 20px 
 			p 
 				font-size: 16px
 				color: #333333
+				padding-bottom: 20px
 		.pro-desc
 			table
 				tbody
@@ -41,12 +41,13 @@
 						font-size: 16px
 						color: #333333
 						font-weight: 600
-						padding-top: 30px
+						// padding-top: 30px
+						padding: 10px 0 0 0
 					.button
 						display: flex
 						align-items: center
 						justify-content: center
-						padding: 10px 0 0 20px
+						padding: 0 0 0 20px
 						a
 							display: flex
 							padding: 0
@@ -55,7 +56,6 @@
 							al
 							width: 145px
 							height: 45px
-							margin: 10px 0 0 0
 							border: 1px solid #222
 							font-size: 16px
 							background: $azure
@@ -71,11 +71,12 @@
 		.pro-detail
 			.pro-name 
 				a 
-					font-size: 17px
+					font-size: 16px
 			.pro-content
 				p 
 					font-size: 14px
 					text-align: justify
+					padding-bottom: 20px
 			.pro-desc
 				ul 
 					li
@@ -85,13 +86,11 @@
 							text-align: left
 						span 
 							font-size: 14px
-							text-align: left
-			.pro-price
-				padding-top: 20px                    
+							text-align: left                  
 
 // section product-description
 .product-description
-	margin: 60px 0 0 0
+	padding: 30px 0 0 0
 	.pro-descript
 		border: 1px solid #e1e1e1
 	.tab-panels
@@ -128,7 +127,6 @@
 				max-height: 400px
 			.description
 				.content
-					padding: 20px 
 					p 
 						font-size: 16px
 						color: #333 
@@ -195,8 +193,10 @@
 		img
 			max-width: 100%
 			height: auto
-			display: block
+			// display: block
 			margin: 1rem auto
+			@media screen and ( max-width: 576px)
+				width: 10px
 		p
 			font-size: 1rem
 			color: #333333
@@ -212,7 +212,6 @@
 
 @media (max-width: 576px) 
 	.product-description
-		margin-top: 20px
 		.tab-panels
 			ul 
 				li 
@@ -240,7 +239,7 @@
 		max-height: 450px
 		position: relative
 		@media screen and(max-width:1025px)
-			padding: 0 40px
+			padding: 20px 40px
 			order: 2
 			width: 100%
 			flex: 0  0 100%
@@ -300,10 +299,15 @@
 			@media screen and(max-width:1025px)
 				margin-top: 20px
 				position: relative
+				min-height: 0
+			@media screen and(max-width:576px)
+				margin-top: 20px
+				position: relative
+				min-height: 0
 			.swiper-wrapper
 				max-height: 330px
 				display: flex
-				justify-content: center
+				// justify-content: center
 			.swiper-slide
 				width: 98%
 				height: 25% !important
