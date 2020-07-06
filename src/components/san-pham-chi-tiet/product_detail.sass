@@ -1,19 +1,25 @@
 .product-detail
 	padding: 60px 0 0 0
 	.pro-detail 
-		padding: 20px
+		// padding: 20px
 		background-color: #fff
+		@media screen and ( max-width: 576px)
+			padding: 20px
+			
 		.pro-name
-			padding-bottom: 20px
+			padding-bottom: 28px
+			@media screen and ( max-width: 576px )
+				padding-bottom: 20px
 			a 
 				font-size: 30px 
 				color: $azure
 				font-weight: 500
 		.pro-content
+			padding-bottom: 28px
 			p 
 				font-size: 16px
 				color: #333333
-				padding-bottom: 20px
+				// padding-bottom: 28px
 		.pro-desc
 			table
 				tbody
@@ -31,6 +37,9 @@
 							width: 360px
 							height: 42px
 							padding-left: 20px
+							&:nth-child(1)
+								background: red
+								
 		.pro-price 
 			ul 
 				padding: 0
