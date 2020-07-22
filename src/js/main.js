@@ -449,10 +449,7 @@ function sideNavigation2() {
             parent.removeClass('open')
         }
     })
-
 }
-
-
 
 function appendComment() {
     if ($("body").hasClass('product-detail-page')) {
