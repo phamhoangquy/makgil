@@ -11,7 +11,7 @@
 			@media screen and ( max-width: 576px )
 				padding-bottom: 20px
 			a 
-				font-size: 30px 
+				font-size: 28px 
 				color: $azure
 				font-weight: 500
 		.pro-content
@@ -19,8 +19,6 @@
 			p 
 				font-size: 16px
 				color: #333333
-				// padding-bottom: 28px
-		.pro-desc
 			table
 				tbody
 					tr
@@ -32,14 +30,37 @@
 							width: 232px
 							height: 42px
 							padding-left: 20px
+							
 						td 
 							padding-left: 10px
+							// background-color: none
+							width: 360px
+							height: 42px
+							&:nth-child(1)
+								background: #f5f5f5
+								width: 40%
+		.pro-desc
+			table
+				tbody
+					tr
+						border: 1px solid #d7d7d7!important
+						// border-top: 1px solid #d7d7d7!important
+						width: 100%
+						th 
+							background: #f5f5f5 !important
+							width: 232px
+							height: 42px
+							padding-left: 20px
+							border: 1px solid #d7d7d7!important
+						td 
+							padding-left: 10px
+							border: 1px solid #d7d7d7!important
 							width: 360px
 							height: 42px
 							padding-left: 20px
 							&:nth-child(1)
-								background: red
-								
+								// background: red
+			
 		.pro-price 
 			ul 
 				padding: 0
@@ -132,8 +153,30 @@
 			overflow: hidden
 			max-height: 300px
 			transition: max-height .5s ease-in-out
+			color: $azure
 			@media(min-width: 1260px)
 				max-height: 400px
+			a 
+				color: $azure
+			table
+				width: 100%
+				tbody
+					tr
+						border: 2px dotted #d7d7d7
+						th 
+							background: #f5f5f5 
+							width: 232px
+							height: 42px
+							padding-left: 20px
+							
+						td
+							width: 360px
+							height: 42px
+							padding-left: 20px
+							&:nth-child(1)
+								background: #f5f5f5
+							&:nth-child(2)
+								background: #fff
 			.description
 				.content
 					p 
@@ -196,9 +239,10 @@
 		flex-direction: column
 		justify-content: space-between
 		height: 100%
-		
+		.fullco
 		strong
 			color: $azure
+			font-size: 18px
 		img
 			max-width: 100%
 			height: auto
@@ -209,7 +253,8 @@
 		p
 			font-size: 1rem
 			color: #333333
-			margin-bottom: 10px
+			a 
+				color: $azure
 
 @media (max-width: 1200px) 
 	.product-description

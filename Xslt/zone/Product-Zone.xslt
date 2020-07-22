@@ -29,6 +29,7 @@
 			<xsl:attribute name="class">
 				<xsl:text disable-output-escaping="yes">drop-down</xsl:text>
 			</xsl:attribute>
+
 			<xsl:if test="count(Zone)> 0">
 				<xsl:if test="IsActive='true'">
 					<xsl:attribute name="class">
@@ -49,7 +50,7 @@
 
 				</ul>
 			</xsl:if>
-			<xsl:if test="count(Zone) &lt; 1">
+			<xsl:if test="count(Zone) &lt;1">
 
 				<div class="title"><a>
 						<xsl:attribute name="href">
@@ -59,13 +60,75 @@
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</a></div>
+					</a>
+				</div>
 			</xsl:if>
 
 		</li>
 	</xsl:template>
 
 	<xsl:template match="Zone" mode='Child'>
+		<!-- <li>
+			<xsl:if test="IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text>active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
+			<a>
+				<xsl:attribute name="href">
+					<xsl:value-of select="Url"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="title">
+					<xsl:value-of select="Title"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+			</a>
+		</li> -->
+		<li>
+			<xsl:if test="IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text>active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
+			<xsl:attribute name="class">
+				<xsl:text disable-output-escaping="yes">drop-down-2</xsl:text>
+			</xsl:attribute>
+			<xsl:if test="count(Zone)> 0">
+				<xsl:if test="IsActive='true'">
+					<xsl:attribute name="class">
+						<xsl:text> drop-down-2 active open</xsl:text>
+					</xsl:attribute>
+				</xsl:if>
+				<div class="title-2"><a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+					</a><em class="lnr lnr-chevron-down"></em></div>
+				<ul class="nav-sub-2">
+					<xsl:apply-templates select="Zone" mode='Child2'></xsl:apply-templates>
+
+				</ul>
+			</xsl:if>
+			<xsl:if test="count(Zone) &lt;1">
+				<div class="title-2"><a>
+						<xsl:attribute name="href">
+							<xsl:value-of select="Url"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:attribute name="title">
+							<xsl:value-of select="Title"></xsl:value-of>
+						</xsl:attribute>
+						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+					</a>
+				</div>
+			</xsl:if>
+
+		</li>
+	</xsl:template>
+	<xsl:template match="Zone" mode='Child2'>
 		<li>
 			<xsl:if test="IsActive='true'">
 				<xsl:attribute name="class">
