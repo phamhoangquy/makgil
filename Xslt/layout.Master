@@ -23,9 +23,28 @@
 	<!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
 	<!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
 	<!--*********************************************************************************************-->
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '371962786621620');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=371962786621620&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 </head>
 
 <body id="Body" runat="server" class="canhcam">
+		
+  
 	<portal:FacebookSdk ID="fbsdk" runat="server" />
 	<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
 	<form id="frmMain" runat="server">
@@ -111,22 +130,13 @@
 										</div>
 										<div class="col-12 col-sm-6 col-lg-3">
 											<portal:modulewrapper id="mdl244" runat="server" configuremoduleid="244" />
-										</div>
-										<div class="col-12 col-sm-6 col-lg-3">
-											<portal:modulewrapper id="mdl192" runat="server" configuremoduleid="192" />
-										</div>
-									</div>
-									<div class="row row-footer-bottom">
-										<div class="col-12 col-sm-6 col-lg-6">
-											<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
-										</div>
-										<div class="col-12 col-sm-6 col-lg-3">
 											<div class="verify-image">
 												<portal:modulewrapper id="mdl245" runat="server"
 													configuremoduleid="245" />
 											</div>
 										</div>
-										<div class="col-12 col-lg-3">
+										<div class="col-12 col-sm-6 col-lg-3">
+											<portal:modulewrapper id="mdl192" runat="server" configuremoduleid="192" />
 											<div class="subscrible-wrapper">
 												<portal:modulewrapper id="mdl249" runat="server"
 													configuremoduleid="249" />
@@ -135,6 +145,17 @@
 											</div>
 										</div>
 									</div>
+									<!-- <div class="row row-footer-bottom"> -->
+										<!-- <div class="col-12 col-sm-6 col-lg-6">
+											<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
+										</div> -->
+										<!-- <div class="col-12 col-sm-6 col-lg-3">
+											
+										</div> -->
+										<!-- <div class="col-12 col-lg-3">
+											
+										</div> -->
+									<!-- </div> -->
 								</div>
 								<div class="container">
 									<div class="footer-bottom-wrapper">
