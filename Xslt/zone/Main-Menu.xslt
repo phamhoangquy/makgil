@@ -18,8 +18,18 @@
 			<xsl:if test="position()=1">
 				<a href='/'> <em class="mdi mdi-home"></em></a>
 			</xsl:if>
+			<xsl:if test="count(Zone)>0">
+				<xsl:attribute name="class">
+					<xsl:text disable-output-escaping="yes">has-dropdown</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
+			<xsl:if test="count(Zone)>0 and IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text disable-output-escaping="yes">has-dropdown active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
 			<xsl:if test="position() !=1">
-				<a>
+				<a class="nav-item">
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
@@ -29,6 +39,75 @@
 					<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 				</a>
 			</xsl:if>
+			<xsl:if test="count(Zone)>0">
+				<ul class="dropdown-list">
+					<xsl:apply-templates select="Zone" mode="ZoneMenu2"></xsl:apply-templates>
+				</ul>
+			</xsl:if>
 		</li>
 	</xsl:template>
+	<xsl:template match="Zone" mode="ZoneMenu2">
+        <li class="dropdown-item">
+            <xsl:if test="IsActive='true'">
+                <xsl:attribute name="class">
+                    <xsl:text disable-output-escaping="yes">dropdown-item active</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="count(Zone)>0">
+                <xsl:attribute name="class">
+                    <xsl:text disable-output-escaping="yes">dropdown-item dropdown-item-has-dropdown</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="count(Zone)>0 and IsActive='true'">
+                <xsl:attribute name="class">
+                    <xsl:text disable-output-escaping="yes">dropdown-item dropdown-item-has-dropdown active</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <div class="title-zone-2">
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="Url"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="title">
+                        <xsl:value-of select="Title"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:attribute name="target">
+                        <xsl:value-of select="Target"></xsl:value-of>
+                    </xsl:attribute>
+                    <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+                </a>
+            </div>
+            <xsl:if test="count(Zone)>0">
+                <ul class="dropdown-list-2">
+                    <xsl:apply-templates select="Zone" mode="ZoneMenu3"></xsl:apply-templates>
+                </ul>
+            </xsl:if>
+        </li>
+    </xsl:template>
+	<xsl:template match="Zone" mode="ZoneMenu3">
+        <li class="dropdown-item-2">
+            <xsl:if test="IsActive='true'">
+                <xsl:attribute name="class">
+                    <xsl:text disable-output-escaping="yes">dropdown-item-2 active</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <xsl:if test="count(Zone)>0 and IsActive='true'">
+                <xsl:attribute name="class">
+                    <xsl:text disable-output-escaping="yes">dropdown-item-2 active</xsl:text>
+                </xsl:attribute>
+            </xsl:if>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:value-of select="Url"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="title">
+                    <xsl:value-of select="Title"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="target">
+                    <xsl:value-of select="Target"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+            </a>
+        </li>
+    </xsl:template>
 </xsl:stylesheet>

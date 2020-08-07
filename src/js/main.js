@@ -77,7 +77,7 @@ function watchMoreDetail() {
             article.not($(this).parents("article")).removeClass("active");
             $(this).addClass('open')
             $(this).parents("article").find('.fullcontent').css({
-                "max-height": maxHeight + height + "px"
+                "max-height":  "100%"
             });
             $(this).parents("article").addClass("active");
             $("html, body").animate({
