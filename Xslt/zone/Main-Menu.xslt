@@ -40,9 +40,11 @@
 				</a>
 			</xsl:if>
 			<xsl:if test="count(Zone)>0">
-				<ul class="dropdown-list">
-					<xsl:apply-templates select="Zone" mode="ZoneMenu2"></xsl:apply-templates>
-				</ul>
+				<div class="mega-menu">
+					<ul class="dropdown-list">
+						<xsl:apply-templates select="Zone" mode="ZoneMenu2"></xsl:apply-templates>
+					</ul>
+				</div>
 			</xsl:if>
 		</li>
 	</xsl:template>

@@ -15,6 +15,7 @@ header
 	.container-custom
 		background: #ffffff 
 		height: 100%
+		position: relative
 	.container
 		height: 100%
 	.header-wrapper-right
@@ -24,6 +25,8 @@ header
 		align-items: flex-end
 		height: 100%
 		padding: 20px 0
+		// padding-bottom: 0
+		// position: relative
 		@media screen and ( max-width: 1024px )
 			padding: 0
 			
@@ -220,48 +223,81 @@ header
 			a
 				padding: 5px 20px
 				font-size: r(16px)
+		
+
 		&.has-dropdown
-			position: relative
+			// position: relative
 			cursor: pointer
-			&:before
-				font-family: 'Material Design Icons'
-				content: '\f35d'
-				position: absolute
-				top: 50%
-				transform: translateY(-50%)
-				right: 2px
-				font-size: 18px
-				color: $main
-			.dropdown-list
+			// &:before
+			// 	font-family: 'Material Design Icons'
+			// 	content: '\f35d'
+			// 	position: absolute
+			// 	top: 50%
+			// 	transform: translateY(-50%)
+			// 	right: 2px
+			// 	font-size: 18px
+			// 	color: $main
+			.mega-menu
+				width: 100%
 				position: absolute
 				top: 150%
 				opacity: 0
 				pointer-events: none
-				left: 5px
+				right: 0
 				transition: .25s ease-in-out all
 				z-index: 33
 				width: calc(100% + 50px)
+				z-index: 11
+				max-width: 1026px
+				padding-top: 30px
+				background: none
+			.dropdown-list
+				max-height: 85vh 
+				overflow-y: auto 
 				background: #ffffff
 				box-shadow: 0 0 10px 2px rgba(0,0,0,0.1)
 				transition: .4s ease-in-out all
 				padding: 10px 0
-				z-index: 11
 				list-style-type: none
+				display: flex
+				flex-wrap: wrap 
+				// margin: 0 -15px
+				padding: 15px
+				padding-top: 0
 				.dropdown-item 
 					width: 100%
 					padding: 0 15px
+					flex: 0 0 25%
+					max-width: 25%
 					position: relative
 					cursor: pointer
+					margin-top: 15px
 					&.dropdown-item-has-dropdown
-						&:before
-							font-family: 'Material Design Icons'
-							content: '\f35f'
-							position: absolute
-							top: 50%
-							transform: translateY(-50%)
-							right: 2px
-							font-size: 18px
-							color: $main
+						// &:before
+						// 	font-family: 'Material Design Icons'
+						// 	content: '\f35f'
+						// 	position: absolute
+						// 	top: 50%
+						// 	transform: translateY(-50%)
+						// 	right: 2px
+						// 	font-size: 18px
+						// 	color: $main
+					.title-zone-2
+						a 
+							font-size: 14px
+							font-weight: 400
+							color: $azure
+							text-transform: uppercase
+							position: relative
+							padding-bottom: 5px
+							&::before
+								content: ''
+								position: absolute
+								bottom: 0
+								left: 0
+								background: $azure
+								width: 50px
+								height: 1px
 					a 
 						padding: 7px 0
 						font-size: 13px
@@ -283,28 +319,33 @@ header
 					&.active, &:hover
 						a 
 							color: $azure
-							&::before
-								width: 100%
+							// &::before
+							// 	width: 100%
 					.dropdown-list-2
-						position: absolute
-						left: 150%
-						opacity: 0
-						pointer-events: none
+						// position: absolute
+						// left: 150%
+						// opacity: 0
+						// pointer-events: none
 						transition: .25s ease-in-out all
 						z-index: 33
-						width: calc(100% + 50px)
-						background: #ffffff
-						box-shadow: 0 0 10px 2px rgba(0,0,0,0.1)
-						transition: .4s ease-in-out all
-						padding: 10px 0
+						// width: calc(100% + 50px)
+						// background: #ffffff
+						// box-shadow: 0 0 10px 2px rgba(0,0,0,0.1)
+						// transition: .4s ease-in-out all
+						// padding: 10px 0
 						z-index: 2
-						top: 0
+						// top: 0
 						list-style-type: none
+						padding-left: 0
+						margin-top: 5px
 						.dropdown-item-2
 							width: 100%
-							padding: 0 15px
+							padding: 0 
+							margin-top: 0
+							// padding: 0 15px
 							a 
-								padding: 7px 0
+								padding: 2px 0
+								// padding: 7px 0
 								font-size: 13px
 								text-align: left
 								text-transform: none
@@ -326,13 +367,13 @@ header
 									color: $azure
 									&::before
 										width: 100%
-					&:hover
-						.dropdown-list-2
-							left: 100%
-							opacity: 1
-							pointer-events: initial
+					// &:hover
+					// 	.dropdown-list-2
+					// 		left: 100%
+					// 		opacity: 1
+					// 		pointer-events: initial
 			&:hover
-				.dropdown-list
-					top: 100%
+				.mega-menu
+					top: 80px
 					opacity: 1
 					pointer-events: initial
