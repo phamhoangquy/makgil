@@ -74,26 +74,38 @@
 										<li>
 											<div class="zalo">
 												<a href="https://zalo.me/0902988005">
-													<img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+													<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+													</div>
+													<span>Sale 1</span>
 												</a>
 												<a href="https://zalo.me/0902949401">
-													<img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+													<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+													</div>
+													<span>Sale 2</span>
 												</a>
 												<a href="https://zalo.me/0932798882">
-													<img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+													<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+													</div>
+													<span>Sale 3</span>
 												</a>
 											</div>
 										</li>
 										<li>
 											<div class="skype">
 												<a href="skype:liembui95.lb@gmail.com?chat">
-													<img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+													<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+													</div>
+													<span>Sale 1</span>
 												</a>
 												<a href="skype:tinhdv@makgil.com?chat">
-													<img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+													<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+													</div>
+													<span>Sale 2</span>
 												</a>
 												<a href="skype:nhathoangchau@hotmail.com?chat">
-													<img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+													<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+													</div>
+													<span>Sale 3</span>
 												</a>
 											</div>
 										</li>
