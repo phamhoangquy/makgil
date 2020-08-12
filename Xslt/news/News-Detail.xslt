@@ -50,7 +50,7 @@
 						<div class="col-lg-3">
 							<div class="right-news">
 								<div class="card-title">
-									<h3>VỊ TRÍ KHÁC</h3>
+									<h3>SỰ KIỆN NỔI BẬT KHÁC</h3>
 								</div>
 								<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>
 

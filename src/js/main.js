@@ -10,7 +10,8 @@ $(document).ready(function() {
     watchMoreDetail();
     // toggleSupport()
     appendComment();
-    sideNavigation2();
+	sideNavigation2();
+	scrollProduct();
 });
 
 //Check if windows size large then 1024 then these function will be execute
@@ -523,3 +524,13 @@ function appendComment() {
 // 		}
 // 	})
 // });
+
+function scrollProduct(){
+	var link = $('.side-navigation-wrapper .side-navigation>li .nav-sub li a')
+	var productList = $('.product-display')
+	link.on('click', function(){
+		$("html, body").animate({
+			scrollTop: productList.offset().top - $('header').height()
+		}, 1000)
+	})
+}
