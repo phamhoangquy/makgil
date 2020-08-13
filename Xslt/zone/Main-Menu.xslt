@@ -98,7 +98,7 @@
                     <xsl:text disable-output-escaping="yes">dropdown-item-2 active</xsl:text>
                 </xsl:attribute>
             </xsl:if>
-            <a>
+            <a >
                 <xsl:attribute name="href">
                     <xsl:value-of select="Url"></xsl:value-of>
                 </xsl:attribute>
