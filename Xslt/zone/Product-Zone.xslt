@@ -19,7 +19,6 @@
 		<xsl:apply-templates select="Zone" mode='Parent'></xsl:apply-templates>
 	</xsl:template>
 	<xsl:template match="Zone" mode='Parent'>
-
 		<li>
 			<xsl:if test="IsActive='true'">
 				<xsl:attribute name="class">
@@ -36,15 +35,10 @@
 						<xsl:text> drop-down active open</xsl:text>
 					</xsl:attribute>
 				</xsl:if>
-				<div class="title"><a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</a><em class="lnr lnr-chevron-down"></em></div>
+				<div class="title root">
+					<xsl:apply-templates select="." mode='LinkAjax'/>
+					<em class="lnr lnr-chevron-down"></em>
+				</div>
 				<ul class="nav-sub">
 					<xsl:apply-templates select="Zone" mode='Child'></xsl:apply-templates>
 
@@ -52,15 +46,8 @@
 			</xsl:if>
 			<xsl:if test="count(Zone) &lt;1">
 
-				<div class="title"><a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</a>
+				<div class="title">
+						<xsl:apply-templates select="." mode='LinkAjax'/>
 				</div>
 			</xsl:if>
 
@@ -99,30 +86,19 @@
 						<xsl:text> drop-down-2 active open</xsl:text>
 					</xsl:attribute>
 				</xsl:if>
-				<div class="title-2"><a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</a><em class="lnr lnr-chevron-down"></em></div>
+				<div class="title-2">
+					<xsl:apply-templates select="." mode='LinkAjax'/>
+
+					<em class="lnr lnr-chevron-down"></em>
+				</div>
 				<ul class="nav-sub-2">
 					<xsl:apply-templates select="Zone" mode='Child2'></xsl:apply-templates>
 
 				</ul>
 			</xsl:if>
 			<xsl:if test="count(Zone) &lt;1">
-				<div class="title-2"><a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</a>
+				<div class="title-2">
+			<xsl:apply-templates select="." mode='LinkAjax'/>
 				</div>
 			</xsl:if>
 
@@ -135,15 +111,21 @@
 					<xsl:text>active</xsl:text>
 				</xsl:attribute>
 			</xsl:if>
-			<a>
-				<xsl:attribute name="href">
-					<xsl:value-of select="Url"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:attribute name="title">
-					<xsl:value-of select="Title"></xsl:value-of>
-				</xsl:attribute>
-				<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-			</a>
+			<xsl:apply-templates select="." mode='LinkAjax'/>
 		</li>
+	</xsl:template>
+	<xsl:template match="Zone" mode="LinkAjax">
+		<a href="#"  onclick="AjaxLoadLazy(event,this);return false;">
+			<xsl:attribute name="data-id">
+				<xsl:value-of select="ZoneId"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:attribute name="href"> 
+				<xsl:value-of select="Url"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:attribute name="title">
+				<xsl:value-of select="Title"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+		</a>
 	</xsl:template>
 </xsl:stylesheet>

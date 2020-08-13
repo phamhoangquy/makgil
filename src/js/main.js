@@ -11,7 +11,9 @@ $(document).ready(function() {
     // toggleSupport()
     appendComment();
 	sideNavigation2();
-	scrollProduct();
+	// scrollProduct();
+	mToggleMenuMega();
+	animationMegaMenu();
 });
 
 //Check if windows size large then 1024 then these function will be execute
@@ -43,7 +45,7 @@ function tabActive() {
 
         let maxHeight = 400;
         let contentTab = $(".tab-wrapper .tab-item.active");
-        console.log(contentTab.height())
+        // console.log(contentTab.height())
         if (contentTab.height() < maxHeight) {
             $(contentTab).find('.btn-view-more').hide()
         }
@@ -532,5 +534,28 @@ function scrollProduct(){
 		$("html, body").animate({
 			scrollTop: productList.offset().top - $('header').height()
 		}, 1000)
+	})
+}
+function mToggleMenuMega(){
+	let liMenu = $('.nav-menu-primary li.has-dropdown .dropdown-list .dropdown-item .title-zone-2')
+	
+	liMenu.on('click', function(){
+		if($(window).width() < 576){
+			$(this).toggleClass('show')
+			$(this).next('.dropdown-list-2').slideToggle(500)
+		}
+	})
+}
+
+function animationMegaMenu(){
+	let aMega = $('.nav-menu-primary li.has-dropdown .dropdown-list .dropdown-item .dropdown-list-2 .dropdown-item-2 a')
+	let header = $('.header').outerHeight()
+	let productList = $('.product-display')
+	aMega.on('click', function(){
+		setTimeout(() => {
+			$("html, body").animate({
+				scrollTop: productList.offset().top - header
+			}, 1000)
+		}, 1000);
 	})
 }

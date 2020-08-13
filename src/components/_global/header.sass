@@ -252,7 +252,8 @@ header
 				max-width: 1026px
 				padding-top: 30px
 				background: none
-				
+				@media(max-width: 576px)
+					bottom: 0
 			.dropdown-list
 				max-height: 60vh 
 				overflow-y: auto 
@@ -266,6 +267,8 @@ header
 				// margin: 0 -15px
 				padding: 15px
 				padding-top: 0
+				@media(max-width: 576px)
+					max-height: 75vh
 				.dropdown-item 
 					width: 100%
 					padding: 0 15px
@@ -274,6 +277,9 @@ header
 					position: relative
 					cursor: pointer
 					margin-top: 15px
+					@media(max-width: 576px)
+						flex: 0 0 100%
+						max-width: 100%
 					&.dropdown-item-has-dropdown
 						// &:before
 						// 	font-family: 'Material Design Icons'
@@ -300,6 +306,20 @@ header
 								background: $azure
 								width: 50px
 								height: 1px
+						@media(max-width: 576px)
+							position: relative
+							&::before
+								font-family: 'Material Design Icons'
+								content: '\f140'
+								position: absolute
+								top: 2px
+								right: 0
+								pointer-events: none
+							a
+								font-size: 12px
+							&.show
+								&::before
+									transform: rotate(180deg)
 					a 
 						padding: 7px 0
 						font-size: 13px
@@ -340,11 +360,15 @@ header
 						list-style-type: none
 						padding-left: 0
 						margin-top: 5px
+						@media(max-width: 576px)
+							display: none
+							transition: initial
 						.dropdown-item-2
 							width: 100%
 							padding: 0 
 							margin-top: 0
 							// padding: 0 15px
+							
 							a 
 								padding: 2px 0
 								// padding: 7px 0
