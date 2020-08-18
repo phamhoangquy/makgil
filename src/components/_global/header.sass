@@ -50,8 +50,9 @@ header
 		@media screen and ( max-width: 1024px)
 			display: flex
 			align-items: center
-			justify-content: center
+			justify-content: flex-start
 			margin: 10px 0
+			padding: 0 20px
 	.contact-wrapper
 		padding-right: 25px
 		position: relative
@@ -77,8 +78,8 @@ header
 		@media screen and ( max-width: 1024px)
 			display: flex
 			align-items: center
-			justify-content: center
-			padding: 0
+			justify-content: flex-start
+			padding: 0 20px
 			margin: 10px 0
 			
 	.mail-wrapper
@@ -175,14 +176,37 @@ header
 	list-style-type: none
 	padding: 0
 	list-style-type: none
+	li 
+		&.has-dropdown
+			> .toggle-mega-mobile
+				display: none
 	@media screen and ( max-width:1024px)
 		border-top: 1px solid $azure
 		display: flex
 		flex-direction: column
-		align-items: center
+		align-items: flex-start
 		justify-content: center
 		padding-top: 20px
-		
+		li 
+			width: 100%
+			&.has-dropdown
+				position: relative
+				> .toggle-mega-mobile
+					display: block
+					position: absolute
+					top: 2px
+					right: 15px
+					z-index: 11
+					display: flex
+					justify-content: center
+					align-items: center
+					em 
+						font-size: 20px
+						transition: .2s ease-in-out all
+				.toggle-mega-mobile
+					&.active
+						em 
+							transform: rotate(180deg)
 	li
 		&:first-child
 			a
@@ -238,22 +262,24 @@ header
 			// 	font-size: 18px
 			// 	color: $main
 			.mega-menu
-				width: 100%
-				position: absolute
-				top: 150%
-				opacity: 0
-				pointer-events: none
-				left: 50%
-				transform: translateX(-50%)
-				transition: .25s ease-in-out all
-				z-index: 33
-				width: calc(100% + 50px)
-				z-index: 11
-				max-width: 1026px
-				padding-top: 30px
 				background: none
-				@media(max-width: 576px)
-					bottom: 0
+				bottom: 0
+				display: none
+				@media(min-width: 1025px)
+					width: 100%
+					position: absolute
+					top: 150%
+					opacity: 0
+					pointer-events: none
+					left: 50%
+					transform: translateX(-50%)
+					transition: .25s ease-in-out all
+					z-index: 33
+					width: calc(100% + 50px)
+					z-index: 11
+					max-width: 1026px
+					padding-top: 30px
+					display: block
 			.dropdown-list
 				max-height: 60vh 
 				overflow-y: auto 
@@ -267,8 +293,28 @@ header
 				// margin: 0 -15px
 				padding: 15px
 				padding-top: 0
-				@media(max-width: 576px)
-					max-height: 75vh
+				@media(max-width: 1024px)
+					max-height: none
+					box-shadow: none 
+					// display: none
+					.dropdown-item 
+						margin-top: 5px !important
+						&:first-child
+							margin-top: 0
+
+						.dropdown-list-2
+							padding-left: 15px !important
+						// &.active
+						.title-zone-2
+							a 
+								color: #333333 !important
+								&::before
+									background: #333333 !important
+									display: none !important
+								&.active
+									color: $azure
+									&::before
+										background: $azure
 				.dropdown-item 
 					width: 100%
 					padding: 0 15px

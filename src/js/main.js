@@ -527,12 +527,19 @@ function appendComment() {
 // });
 
 function mToggleMenuMega() {
+	let toggleHasMega = $('.nav-menu-primary li.has-dropdown .toggle-mega-mobile')
 	let liMenu = $('.nav-menu-primary li.has-dropdown .dropdown-list .dropdown-item .title-zone-2')
 
 	liMenu.on('click', function () {
 		if ($(window).width() < 576) {
 			$(this).toggleClass('show')
 			$(this).next('.dropdown-list-2').slideToggle(500)
+		}
+	})
+	toggleHasMega.on('click', function () {
+		if ($(window).width() < 1025) {
+			$(this).toggleClass('active')
+			$(this).next('.mega-menu').slideToggle(500)
 		}
 	})
 }
