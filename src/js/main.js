@@ -550,7 +550,7 @@ function animationMegaMenu() {
 		}, 1000)
 	})
 
-	if ($('.nav-menu-primary li.has-dropdown').hasClass('active')) {
+	if ($('body.product-scroll-body .nav-menu-primary li.has-dropdown').hasClass('active')) {
 		
 		aMega.attr('onclick', 'AjaxLoadLazy(event,this);return false;')
 
