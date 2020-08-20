@@ -550,6 +550,9 @@ function animationMegaMenu() {
 	let linkCatalogProduct = $('.side-navigation-wrapper .side-navigation>li .nav-sub li a')
 	let megaMenuActive = $('.nav-menu-primary li.has-dropdown .dropdown-list .dropdown-item .dropdown-list-2 .dropdown-item-2.active a')
 	let productList = $('.product-display')
+	let pagination = $('.modulepager ul li')
+	let checkPage = window.location.search
+	console.log(checkPage)
 
 	linkCatalogProduct.on('click', function () {
 		$("html, body").animate({
@@ -557,23 +560,41 @@ function animationMegaMenu() {
 		}, 1000)
 	})
 
-	if ($('body.product-scroll-body .nav-menu-primary li.has-dropdown').hasClass('active')) {
-		
-		aMega.attr('onclick', 'AjaxLoadLazy(event,this);return false;')
-
+	if( window.location.search == checkPage){
 		setTimeout(() => {
 
-			megaMenuActive.trigger('click', function () {
+			// megaMenuActive.trigger('click', function () {
 				$("html, body").animate({
 					scrollTop: productList.offset().top - $('header').height()
 				}, 1000);
-			})
+			// })
 		}, 1000);
 
-		aMega.on('click', function () {
-			$("html, body").animate({
-				scrollTop: productList.offset().top - $('header').height()
-			}, 1000)
-		})
+	}
+	else{
+
+		if ($('body.product-scroll-body .nav-menu-primary li.has-dropdown').hasClass('active')) {
+			
+			aMega.attr('onclick', 'AjaxLoadLazy(event,this);return false;')
+	
+			setTimeout(() => {
+	
+				megaMenuActive.trigger('click', function () {
+					$("html, body").animate({
+						scrollTop: productList.offset().top - $('header').height()
+					}, 1000);
+				})
+			}, 1000);
+	
+			aMega.on('click', function () {
+				$("html, body").animate({
+					scrollTop: productList.offset().top - $('header').height()
+				}, 1000)
+			})
+	
+			pagination.on('click', function () {
+				
+			})
+		}
 	}
 }
