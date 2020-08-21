@@ -496,11 +496,14 @@
 		justify-content: space-between
 		align-items: center
 		transition: .2s ease-in-out all
-		left: 50%
-		transform: translateX(-50%)
+		left: 0
+		// transform: translateX(-50%)
 		z-index: 11
 		pointer-events: none
 		padding-top: 15px
+		@media(min-width: 1024px)
+			left: 50%
+			transform: translateX(-50%)
 		li 
 			padding: 0 5px
 	&:hover 
@@ -520,8 +523,3 @@
 			font-weight: 400
 		+ a 
 			margin-left: 10px
-.support-skype
-	.list-icon-share
-		left: auto 
-		right: 0
-		transform: translateX(0)
