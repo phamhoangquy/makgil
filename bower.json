@@ -22,7 +22,7 @@
     "mdi": "3.6.95",
     "font-awesome": "5.9.0",
     "linearicons": "1.0.1",
-    "lazysizes": "5.1.0",
+    "lazysizes": "^5.2.2",
     "paginationjs": "^2.1.4",
     "lightgallery": "^1.6.12",
     "bootstrap": "^4.5.0",

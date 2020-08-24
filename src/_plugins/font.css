@@ -10,6 +10,7 @@
       format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .mdi:before,
@@ -19,6 +20,7 @@
   font-size: inherit;
   text-rendering: auto;
   line-height: inherit;
+  font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -56,6 +58,7 @@
 .far:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -102,6 +105,7 @@
     url("../fonts/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -114,6 +118,7 @@
     url("../fonts/IcoMoon-Free.svg#IcoMoon-Free") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .lnr:before {
