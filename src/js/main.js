@@ -13,7 +13,7 @@ $(document).ready(function () {
 	sideNavigation2();
 	mToggleMenuMega();
 	animationMegaMenu();
-	lazySizes.init();
+	// lazySizes.init();
 });
 
 //Check if windows size large then 1024 then these function will be execute
