@@ -12,11 +12,10 @@
 		JQueryUIThemeName="smoothness" />
 	<portal:Favicon ID="Favicon1" runat="server" />
 	<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="false" IncludeFancyBox="false" />
- 
-	
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
- 
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
 	<!--*********************************************************************************************-->
 	<!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
 	<!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
@@ -28,7 +27,7 @@
 </head>
 
 <body id="Body" runat="server" class="canhcam">
-		
+
 	<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
 	<form id="frmMain" runat="server">
 		<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
@@ -129,13 +128,13 @@
 										</div>
 									</div>
 									<!-- <div class="row row-footer-bottom"> -->
-										<!-- <div class="col-12 col-sm-6 col-lg-6">
+									<!-- <div class="col-12 col-sm-6 col-lg-6">
 											<portal:modulewrapper id="mdl194" runat="server" configuremoduleid="194" />
 										</div> -->
-										<!-- <div class="col-12 col-sm-6 col-lg-3">
+									<!-- <div class="col-12 col-sm-6 col-lg-3">
 											
 										</div> -->
-										<!-- <div class="col-12 col-lg-3">
+									<!-- <div class="col-12 col-lg-3">
 											
 										</div> -->
 									<!-- </div> -->
@@ -253,41 +252,51 @@
 	<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
 	<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
 	<script async defer src="/Data/Sites/1/skins/default/js/comment.min.js"></script>
-	<script async defer src="/Data/Sites/1/skins/default/js/custom.js"></script> 
+	<script async defer src="/Data/Sites/1/skins/default/js/custom.js"></script>
 	<script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-90374637-1"></script>
-	   <!-- Facebook Pixel Code -->
-    <script nonce="4yZwhMbBbX">
-      setTimeout(function() {
-          ! function(f, b, e, v, n, t, s) {
-              if (f.fbq) return;
-              n = f.fbq = function() {
-                  n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-              };
-              if (!f._fbq) f._fbq = n;
-              n.push = n;
-              n.loaded = !0;
-              n.version = '2.0';
-              n.queue = [];
-              t = b.createElement(e);
-              t.async = !0;
-              t.src = v;
-              s = b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t, s)
-          }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '371962786621620');
-          fbq('track', 'PageView');
+	<!-- Facebook Pixel Code -->
+	<script nonce="4yZwhMbBbX">
+		setTimeout(function () {
+			! function (f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function () {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = '2.0';
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s)
+			}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+			fbq('init', '371962786621620');
+			fbq('track', 'PageView');
 
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);} 
-		  gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
 
-		  gtag('config', 'UA-90374637-1');
-      }, 3000);
-    </script>
-    <noscript><img height="1" width="1" class="pixel" src="https://www.facebook.com/tr?id=371962786621620&ev=PageView&noscript=1"/></noscript>
-    <style nonce="2IRI4BAdMt">.pixel{display:none}</style>
-    <!-- End Facebook Pixel Code -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-90374637-1');
+		}, 3000);
+
+	</script>
+	<noscript><img height="1" width="1" class="pixel"
+			src="https://www.facebook.com/tr?id=371962786621620&ev=PageView&noscript=1" /></noscript>
+	<style nonce="2IRI4BAdMt">
+		.pixel {
+			display: none
+		}
+
+	</style>
+	<!-- End Facebook Pixel Code -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 
 </body>
 
