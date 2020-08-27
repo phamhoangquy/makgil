@@ -402,8 +402,8 @@ function mappingContact() {
 function mappingSearch() {
 	return new MappingListener({
 		selector: ".search-wrapper",
-		mobileWrapper: ".mobile-wrapper",
-		mobileMethod: "appendTo",
+		mobileWrapper: ".mobile-wrapper .nav-menu-primary",
+		mobileMethod: "insertBefore",
 		desktopWrapper: ".language-wrapper",
 		desktopMethod: "insertBefore",
 		breakpoint: 1025

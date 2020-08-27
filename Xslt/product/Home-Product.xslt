@@ -30,7 +30,7 @@
                         <xsl:attribute name="title">
                             <xsl:value-of select="Title"></xsl:value-of>
                         </xsl:attribute>
-                        <img class="lazyload">
+                        <img class="lazyload" src="/Data/Sites/1/media/default.jpg">
                             <xsl:attribute name="data-src">
                                 <xsl:value-of select="ThumbnailUrl"></xsl:value-of>
                             </xsl:attribute>

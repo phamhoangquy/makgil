@@ -497,7 +497,6 @@
 		align-items: center
 		transition: .2s ease-in-out all
 		left: 0
-		// transform: translateX(-50%)
 		z-index: 11
 		pointer-events: none
 		padding-top: 15px
@@ -523,3 +522,23 @@
 			font-weight: 400
 		+ a 
 			margin-left: 10px
+.product-detail .pro-detail
+	@media(max-width: 576px)
+		.pro-price
+			>ul 
+				flex-wrap: wrap 
+				>li 
+					&:first-child
+						width: 100%
+					+ li 
+						margin-left: 0
+						margin-top: 15px
+						margin-right: 15px
+					.support-zalo
+						.list-icon-share
+							background: #ffffff
+							box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)
+					.support-skype
+						.list-icon-share
+							background: #ffffff
+							box-shadow: 0 0 10px 0 rgba(0,0,0,0.1)

@@ -195,32 +195,32 @@
 				</div>
 			</div>
 		</section>
-		<xsl:if test="count(/ProductDetail/ManufacturerOther) > 0">
-			<xsl:apply-templates select="/ProductDetail/ManufacturerOther"/>
+		<xsl:if test="count(/ProductDetail/ProductOther) > 0">
+			<section class="other-product">
+				<div class="container-custom"> 
+					<div class="container">
+						<div class="head-title">
+							<xsl:text>Sản phẩm liên quan </xsl:text>
+							<xsl:value-of select="Title"/>
+						</div>
+						<div class="other-product-wrapper">
+							<div class="nav-arrow-prev"><em class="mdi mdi-arrow-left"></em></div>
+							<div class="nav-arrow-next"><em class="mdi mdi-arrow-right"></em></div>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<xsl:apply-templates select="/ProductDetail/ProductOther" />
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</section>
 		</xsl:if>
 	</xsl:template>
 
 
 	<xsl:template match="ManufacturerOther">
-		<section class="other-product">
-			<div class="container-custom"> 
-				<div class="container">
-					<div class="head-title">
-						<xsl:text>Sản phẩm liên quan của thương hiệu </xsl:text>
-						<xsl:value-of select="Title"/>
-					</div>
-					<div class="other-product-wrapper">
-						<div class="nav-arrow-prev"><em class="mdi mdi-arrow-left"></em></div>
-						<div class="nav-arrow-next"><em class="mdi mdi-arrow-right"></em></div>
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<xsl:apply-templates select="Product" mode="Slide"/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 	</xsl:template>
 	<xsl:template match="ProductAttributes">
 		<xsl:if test="position()=1">

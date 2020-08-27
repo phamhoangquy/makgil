@@ -24,10 +24,10 @@
 					<xsl:attribute name="title">
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
-					<img>
-					<xsl:attribute name="src">
-						<xsl:value-of select="ImageUrl"></xsl:value-of>
-					</xsl:attribute>
+                        <img class="lazyload" src="/Data/Sites/1/media/default.jpg">
+                            <xsl:attribute name="data-src">
+                                <xsl:value-of select="ImageUrl"></xsl:value-of>
+                            </xsl:attribute>
 					<xsl:attribute name="alt">
 						<xsl:value-of select="Title"></xsl:value-of>
 					</xsl:attribute>
