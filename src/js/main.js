@@ -367,6 +367,66 @@ function swiperInit() {
 			},
 		},
 	})
+
+	var productSlide = new Swiper(".main-slide-product .swiper-container", {
+		// Optional parameters
+		speed: 1000,
+		slidesPerView: 2,
+		spaceBetween: 30,
+		slidesPerColumn: 6,
+		slidesPerGroup: 2,
+		// autoplay: {
+		// 	delay: 2000
+		// },
+		navigation: {
+			nextEl: '.main-slide-product .nav-arrow-next',
+			prevEl: '.main-slide-product .nav-arrow-prev',
+		},
+		breakpointsInverse: true,
+		breakpoints: {
+			// 320: {
+			// 	slidesPerView: 1,
+
+			// },
+			// 400: {
+			// 	slidesPerView: 2,
+
+			// },
+			// 480: {
+			// 	slidesPerView: 3,
+
+			// },
+			768: {
+				slidesPerView: 3,
+				slidesPerGroup: 3,
+
+			},
+			1025: {
+				slidesPerView: 4,
+				slidesPerGroup: 4,
+			},
+			// 1440: {
+			// 	slidesPerView: 8,
+
+			// },
+		},
+		modifierClass: true,
+		pagination: {
+			el: ".main-slide-product .swiper-pagination",
+			hide: true,
+			bulletElement: 'span',
+			clickable: true,
+			// progressbarOpposite: true,
+			// dynamicBullets: true,
+			// dynamicMainBullets: 3,
+			// formatFractionCurrent: 1,
+			modifierClass: true,
+			renderBullet: function (index, className) {
+			  return '<span class="' + className + '">' + (index + 1) + "</span>";
+			},
+		
+		  },
+	});
 }
 
 
@@ -556,6 +616,8 @@ function animationMegaMenu() {
 		console.log(checkPage)
 	
 		linkCatalogProduct.on('click', function () {
+			$('.side-navigation-wrapper .side-navigation>li .nav-sub li a').removeClass('active')
+			$(this).addClass('active')
 			$("html, body").animate({
 				scrollTop: productList.offset().top - $('header').height()
 			}, 1000)

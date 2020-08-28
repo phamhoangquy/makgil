@@ -8,13 +8,24 @@
 			<h2 class="head-title">
 				<xsl:value-of disable-output-escaping="yes" select="/ProductList/ZoneTitle"></xsl:value-of>
 			</h2>
+			<!-- <div class="main-slide-product">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					
+					</div>
+				</div>
+				<div class="main-page">
+					<div class="swiper-pagination"></div>
+				</div>
+			</div> -->
 			<div class="row">
-
-				<xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
+						<xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
 			</div>
 		</section>
 	</xsl:template>
 	<xsl:template match="Product">
+		<!-- <div class="swiper-slide"> -->
+		<!-- </div> -->
 		<div class="col-6 col-md-4 col-lg-3">
 			<div class="figure-product">
 				<div class="figure-image zoom-in">
