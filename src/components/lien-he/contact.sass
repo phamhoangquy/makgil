@@ -1,168 +1,166 @@
 // Banner-contact
 .banner-contact
-    .card-img
-        .img
-            height: 452px
-            img 
-                width: 100%
-                height: 100%
-                object-fit: cover
+	.card-img
+		.img
+			height: 452px
+			img 
+				width: 100%
+				height: 100%
+				object-fit: cover
 
 @media (max-width: 576px )
-    .banner-contact
-        .card-img
-            .img
-                width: 100%
-                height: 300px
-                img 
-                    width: 100%
-                    height: 100%
+	.banner-contact
+		.card-img
+			.img
+				width: 100%
+				height: 300px
+				img 
+					width: 100%
+					height: 100%
 
 @media (max-width: 1024px )
-    .banner-contact
-        .card-img
-            .img
-                width: 100%
-                height: 300px
-                img 
-                    width: 100%
-                    height: 100%
+	.banner-contact
+		.card-img
+			.img
+				width: 100%
+				height: 300px
+				img 
+					width: 100%
+					height: 100%
 
 // form-contact
 .form-contact
-    .card-title
-        padding: 60px 0 0 0
-        h1
-            font-size: 30px
-            color: #333333
-            text-align: center
-            font-weight: 600
-        h2 
-            text-align: center
-      
-    .left
-        width: 100%
-        height: 450px
-        background: #ffffff
-        box-shadow: -2px 5px 10px 10px #f5f5f5
-        .logo
-            display: flex
-            align-items: center
-            justify-content: center
-            padding-top: 30px
-            .img
-                width: 263px
-                height: 60px
-                img 
-                    width: 100%
-                    height: 100%
-        .card-title
-            padding: 30px 0 0px 0
-            h2
-                font-size: 16px
-                color: #333333
-                padding: 0px 0 0 40px
-                font-weight: 600
-                text-align: left
-        .card-body
-            padding-left: 40px
-            ul 
-                padding: 0
-                list-style: none
+	.card-title
+		padding: 60px 0 0 0
+		h2
+			font-size: 30px
+			color: #333333
+			text-align: center
+			font-weight: 600
+	  
+	.left
+		width: 100%
+		height: 450px
+		background: #ffffff
+		box-shadow: -2px 5px 10px 10px #f5f5f5
+		.logo
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-top: 30px
+			.img
+				width: 263px
+				height: 60px
+				img 
+					width: 100%
+					height: 100%
+		.card-title
+			padding: 30px 0 0px 0
+			h2
+				font-size: 16px
+				color: #333333
+				padding: 0px 0 0 40px
+				font-weight: 600
+				text-align: left
+		.card-body
+			padding-left: 40px
+			ul 
+				padding: 0
+				list-style: none
 				li
 					em 
-                        padding-right: 10px
+						padding-right: 10px
 					p
 						font-size: 16px
 						color: #5c5c5c
 
-    .wrap-form
-        @media screen and(max-width:1025px)
-            margin: 0
-            padding: 0 10px
-        .frm-btnwrap
-            position: absolute
-            bottom: 30px
-            right: 5px
-            display: inline-flex
-            margin-right: auto
-            justify-content: flex-end
-            @media screen and(max-width:1025px)
-                margin: 0 !important
-            @media screen and(max-width:767px)
-                position: static
-                display: block
-            .frm-btn
-                input
-                    width: 150px
-                    height: 40px
-                    color: #ffffff
-                    background: $azure
-                    cursor: pointer
-                    font-size: 16px
-                    font-weight: 400
-                    text-align: center
-                    border: none
-                    margin-right: 10px
-                    &:nth-last-child(2)
-                        display: none
-        .form-group
-            margin: 5px 0 20px 0
-            span
-                color: #b2b2b2
-                font-size: 13px
-                &.fa-exclamation-triangle
-                    color: firebrick
-            @media screen and(max-width:1025px)
-                padding: 0 0
-            input,textarea
-                padding-left: 20px
-                border: 1px solid #cdcdcd
-                height: 42px
-                width: 100%
-                color: #333
+	.wrap-form
+		@media screen and(max-width:1025px)
+			margin: 0
+			padding: 0 10px
+		.frm-btnwrap
+			position: absolute
+			bottom: 30px
+			right: 5px
+			display: inline-flex
+			margin-right: auto
+			justify-content: flex-end
+			@media screen and(max-width:1025px)
+				margin: 0 !important
+			@media screen and(max-width:767px)
+				position: static
+				display: block
+			.frm-btn
+				input
+					width: 150px
+					height: 40px
+					color: #ffffff
+					background: $azure
+					cursor: pointer
+					font-size: 16px
+					font-weight: 400
+					text-align: center
+					border: none
+					margin-right: 10px
+					&:nth-last-child(2)
+						display: none
+		.form-group
+			margin: 5px 0 20px 0
+			span
+				color: #b2b2b2
+				font-size: 13px
+				&.fa-exclamation-triangle
+					color: firebrick
+			@media screen and(max-width:1025px)
+				padding: 0 0
+			input,textarea
+				padding-left: 20px
+				border: 1px solid #cdcdcd
+				height: 42px
+				width: 100%
+				color: #333
 
-                transition: .3s all ease-in-out
+				transition: .3s all ease-in-out
 
-                &:focus
-                    outline: none
-                    box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
-            label
-                color: #666666
-                font-size: 14px
-                font-weight: 400
-                margin-bottom: 5px
-            textarea
-                height: 8em
-                padding: 10px 0 0 20px
+				&:focus
+					outline: none
+					box-shadow: 0px 5px 15px 0px rgba(56, 50, 44, 0.15)
+			label
+				color: #666666
+				font-size: 14px
+				font-weight: 400
+				margin-bottom: 5px
+			textarea
+				height: 8em
+				padding: 10px 0 0 20px
 
 
 @media ( max-width: 1024px )
-    .form-contact
-        .card-title
-            h1 
-                padding: 20px 0 0 0
-        .wrap-form
-            margin: 70px 0 0 0
-            .frm-btnwrap
-                bottom: -37px
+	.form-contact
+		.card-title
+			h1 
+				padding: 20px 0 0 0
+		.wrap-form
+			margin: 70px 0 0 0
+			.frm-btnwrap
+				bottom: -37px
 
 @media ( max-width: 992px )
-    .form-contact
-        .card-title
-            // h1 
-            //     margin: -40px 0 0 0 
-        .left
-            width: 100%
-            height: 480px
-        .wrap-form
-            padding-top: 0
+	.form-contact
+		.card-title
+			// h1 
+			//     margin: -40px 0 0 0 
+		.left
+			width: 100%
+			height: 480px
+		.wrap-form
+			padding-top: 0
 
 @media ( max-width: 576px )
-    .form-contact
-        .left
-            width: 100%
-            height: 500px
+	.form-contact
+		.left
+			width: 100%
+			height: 500px
 
 
 // @media ( max-width: 576px )
@@ -171,35 +169,35 @@
 //             margin-top: 30px
 //         .left 
 //             margin-top: 30px
-        
-            
+		
+			
 // Map
 .map
-    .map-wrapper
-        padding-top: 60px
-        padding-bottom: 65px
-        height: 100%
+	.map-wrapper
+		padding-top: 60px
+		padding-bottom: 65px
+		height: 100%
 
 @media (max-width: 992px )
-    .map 
-        .map-wrapper
-            margin-top: 30px
+	.map 
+		.map-wrapper
+			margin-top: 30px
 
 @media (max-width: 1024px )
-    .map 
-        .map-wrapper
-            margin-top: 60px
+	.map 
+		.map-wrapper
+			margin-top: 60px
 
 @media (max-width: 576px )
-    .map 
-        .map-wrapper
-            margin-top: 30px
-            margin-bottom: 30px
+	.map 
+		.map-wrapper
+			margin-top: 30px
+			margin-bottom: 30px
 
 @media (max-width: 767px )
-    .map 
-        .map-wrapper
-            margin-top: 30px
+	.map 
+		.map-wrapper
+			margin-top: 30px
 
 
 // .form-contact
@@ -222,21 +220,23 @@
 //                         input 
 //                             &:nth-last-child(2)
 //                                 display: none
-                                
+								
 
 .form-contact
-    .left
-        .card-body
-            ul
-                li 
-                    p 
-                        &:nth-child(1)
-                            padding: 28px 0 0 0
-                            
+	.head-title
+		text-align: center
+	.left
+		.card-body
+			ul
+				li 
+					p 
+						&:nth-child(1)
+							padding: 28px 0 0 0
+							
 
 
-             
+			 
 				
 			
-                
-                   
+				
+				   

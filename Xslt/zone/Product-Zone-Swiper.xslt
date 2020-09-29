@@ -47,7 +47,7 @@
                     </a>
                 </div>
                 <div class="figcaption">
-                    <h2>
+                    <div class='title'>
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of select="Url"></xsl:value-of>
@@ -57,7 +57,7 @@
                             </xsl:attribute>
                             <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                         </a>
-                    </h2>
+                    </div>
                 </div>
             </div>
         </div>

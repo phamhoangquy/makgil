@@ -7,9 +7,9 @@
         <section class="news-display home-news">
             <div class="container-custom">
                 <div class="container">
-                    <div class="head-title">
+                    <h2 class="head-title">
                         <xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>
-                    </div>
+                    </h2>
                     <div class="row">
                         <div class="col-lg-6">
                             <xsl:apply-templates select="/NewsList/News" mode='Big'></xsl:apply-templates>
@@ -52,7 +52,7 @@
                             <xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
                         </span>
                     </time>
-                    <h2>
+                    <div class='title'>
                         <a>
                             <xsl:attribute name="href">
                                 <xsl:value-of select="Url"></xsl:value-of>
@@ -63,7 +63,7 @@
                             <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                             <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                         </a>
-                    </h2>
+                    </div>
                     <div class="caption">
                         <xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
                     </div>
@@ -100,7 +100,7 @@
                                 <xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
                             </span>
                         </time>
-                        <h2>
+                        <h3 class='title'>
                             <a>
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="Url"></xsl:value-of>
@@ -111,7 +111,7 @@
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                                 <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </a>
-                        </h2>
+                        </h3>
                     </div>
                 </div>
             </div>

@@ -4,9 +4,9 @@
 	<xsl:output method="html" indent="yes" />
 
 	<xsl:template match="/">
-		<h2>
+		<h3 class='title'>
 			<xsl:value-of disable-output-escaping="yes" select="/ZoneList/ModuleTitle"></xsl:value-of>
-		</h2>
+		</h3>
 		<ul>
 			<xsl:apply-templates select="/ZoneList/Zone"></xsl:apply-templates>
 		</ul>

@@ -38,7 +38,7 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="pro-detail">
-								<div class="pro-name">
+								<h1 class="pro-name">
 									<a>
 										<xsl:attribute name="href">
 											<xsl:value-of select="Url"></xsl:value-of>
@@ -52,7 +52,7 @@
 										</xsl:value-of>
 									</a>
 
-								</div>
+								</h1>
 								<div class="pro-content">
 									<xsl:value-of disable-output-escaping="yes" select="/ProductDetail/BriefContent">
 									</xsl:value-of>
@@ -63,7 +63,7 @@
 								</div>
 								<div class="pro-price">
 									<ul>
-										<li> 
+										<li>
 											<a>Giá</a>
 											<div class="button">
 												<a href="/lien-he">
@@ -73,25 +73,29 @@
 										</li>
 										<li>
 											<div class="support-zalo">
-												<div class="img img-hover"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img></div>
+												<div class="img img-hover"><img
+														src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img></div>
 												<ul class="list-icon-share">
 													<li>
 														<a href="https://zalo.me/0902988005">
-															<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+															<div class="img"><img
+																	src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
 															</div>
 															<span>Sale 1</span>
 														</a>
 													</li>
 													<li>
 														<a href="https://zalo.me/0902949401">
-															<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+															<div class="img"><img
+																	src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
 															</div>
 															<span>Sale 2</span>
 														</a>
 													</li>
 													<li>
 														<a href="https://zalo.me/0932798882">
-															<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
+															<div class="img"><img
+																	src="/Data/Sites/1/skins/default/img/v-2/zalo.png"></img>
 															</div>
 															<span>Sale 3</span>
 														</a>
@@ -101,25 +105,29 @@
 										</li>
 										<li>
 											<div class="support-skype">
-												<div class="img img-hover"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img></div>
+												<div class="img img-hover"><img
+														src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img></div>
 												<ul class="list-icon-share">
 													<li>
 														<a href="skype:liembui95.lb@gmail.com?chat">
-															<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+															<div class="img"><img
+																	src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
 															</div>
 															<span>Sale 1</span>
 														</a>
 													</li>
 													<li>
 														<a href="skype:tinhdv@makgil.com?chat">
-															<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+															<div class="img"><img
+																	src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
 															</div>
 															<span>Sale 2</span>
 														</a>
 													</li>
 													<li>
 														<a href="skype:nhathoangchau@hotmail.com?chat">
-															<div class="img"><img src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
+															<div class="img"><img
+																	src="/Data/Sites/1/skins/default/img/v-2/skype.png"></img>
 															</div>
 															<span>Sale 3</span>
 														</a>
@@ -197,12 +205,11 @@
 		</section>
 		<xsl:if test="count(/ProductDetail/ProductOther) > 0">
 			<section class="other-product">
-				<div class="container-custom"> 
+				<div class="container-custom">
 					<div class="container">
-						<div class="head-title">
+						<h2 class="head-title">
 							<xsl:text>Sản phẩm liên quan </xsl:text>
-							<xsl:value-of select="Title"/>
-						</div>
+						</h2>
 						<div class="other-product-wrapper">
 							<div class="nav-arrow-prev"><em class="mdi mdi-arrow-left"></em></div>
 							<div class="nav-arrow-next"><em class="mdi mdi-arrow-right"></em></div>
@@ -212,7 +219,7 @@
 								</div>
 							</div>
 						</div>
-					</div> 
+					</div>
 				</div>
 			</section>
 		</xsl:if>
@@ -220,7 +227,7 @@
 
 
 	<xsl:template match="ManufacturerOther">
-		
+
 	</xsl:template>
 	<xsl:template match="ProductAttributes">
 		<xsl:if test="position()=1">
@@ -310,7 +317,7 @@
 				</div>
 				<div class="overlay-text">
 					<div class="bottom-wrapper">
-						<h2>
+						<h3 class='title'>
 							<a>
 								<xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
@@ -321,7 +328,7 @@
 								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</a>
-						</h2>
+						</h3>
 						<a class="btn btn-arrow">
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
@@ -334,67 +341,13 @@
 					</div>
 				</div>
 				<div class="figcaption">
-					<h2>
+					<h3 class='title'>
 						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
 						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-					</h2>
-				</div>
-			</div>
-		</div>
-	</xsl:template> 
-	<xsl:template match="Product" mode="Slide">
-		<div class="swiper-slide">
-			<div class="figure-product">
-				<div class="figure-image zoom-in">
-					<a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="title">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						<img>
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-						</img>
-					</a>
-				</div>
-				<div class="overlay-text">
-					<div class="bottom-wrapper">
-						<h2>
-							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="Url"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:attribute name="title">
-									<xsl:value-of select="Title"></xsl:value-of>
-								</xsl:attribute>
-								<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-							</a>
-						</h2>
-						<a class="btn btn-arrow">
-							<xsl:attribute name="href">
-								<xsl:value-of select="Url"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="title">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
-							<em class="mdi mdi-arrow-right"></em>
-						</a>
-					</div>
-				</div>
-				<div class="figcaption">
-					<h2>
-						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-					</h2>
+					</h3>
 				</div>
 			</div>
 		</div>
 	</xsl:template>
+
 </xsl:stylesheet>

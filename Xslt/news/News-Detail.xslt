@@ -10,7 +10,7 @@
 					<div class="row">
 						<div class="col-lg-9">
 							<div class="card-title">
-								<h1>
+								<h1 class='text'>
 									<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/Title">
 									</xsl:value-of>
 									<xsl:value-of select="/NewsDetail/EditLink" disable-output-escaping="yes">
@@ -18,7 +18,8 @@
 								</h1>
 								<div class="bottom-wrapper-news-detail">
 									<time>
-										<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/CreatedDate"></xsl:value-of>
+										<xsl:value-of disable-output-escaping="yes" select="/NewsDetail/CreatedDate">
+										</xsl:value-of>
 									</time>
 									<div class="social-network-share">
 										<div class="icon">
@@ -50,7 +51,7 @@
 						<div class="col-lg-3">
 							<div class="right-news">
 								<div class="card-title">
-									<h3>SỰ KIỆN NỔI BẬT KHÁC</h3>
+									<h2 class='title'>SỰ KIỆN NỔI BẬT KHÁC</h2>
 								</div>
 								<xsl:apply-templates select="/NewsDetail/NewsOther"></xsl:apply-templates>
 
@@ -86,7 +87,8 @@
 			<div class="content">
 				<time>
 					<xsl:value-of disable-output-escaping="yes" select="CreatedDate"></xsl:value-of>
-				</time><a class="lcl lcl-2">
+				</time>
+				<h3 class='subtitle'>
 					<a>
 						<xsl:attribute name="href">
 							<xsl:value-of select="Url"></xsl:value-of>
@@ -95,10 +97,9 @@
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
 						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+
 					</a>
-
-
-				</a>
+				</h3>
 			</div>
 		</div>
 	</xsl:template>

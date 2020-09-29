@@ -5,10 +5,10 @@
   <xsl:template match="/">
     <div class="left-brand">
       <div class="card-title">
-        <h3>
+        <h2>
           <!--THƯƠNG HIỆU-->
           <xsl:value-of select ="/ManufacturerList/ModuleTitle" ></xsl:value-of>
-        </h3>
+        </h2>
       </div>
       <div class="content">
         <ul>
@@ -53,9 +53,11 @@
       <a>
         <xsl:attribute name="href">
           <xsl:value-of select="Url"></xsl:value-of>
+          <xsl:text>?index=</xsl:text>
+        <xsl:value-of select="/ManufacturerList/ZoneId"></xsl:value-of>
         </xsl:attribute>
         <xsl:value-of select="Title"></xsl:value-of>
-      </a>
+      </a> 
     </li>
   </xsl:template>
 

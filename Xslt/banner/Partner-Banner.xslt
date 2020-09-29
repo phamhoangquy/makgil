@@ -7,9 +7,9 @@
         <section class="brand-display">
             <div class="container-custom">
                 <div class="container">
-                    <div class="head-title">
+                    <h2 class="head-title">
                         <xsl:value-of disable-output-escaping="yes" select="/BannerList/ModuleTitle"></xsl:value-of>
-                    </div>
+                    </h2>
                     <div class="brand-swiper-wrapper">
                         <div class="nav-arrow-prev">
                             <em class="mdi mdi-arrow-left"></em>

@@ -5,9 +5,9 @@
 
 	<xsl:template match="/">
 		<section class="product-display">
-			<h2 class="head-title">
+			<h1 class="head-title">
 				<xsl:value-of disable-output-escaping="yes" select="/ProductList/ZoneTitle"></xsl:value-of>
-			</h2>
+			</h1>
 			<!-- <div class="main-slide-product">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -19,7 +19,7 @@
 				</div>
 			</div> -->
 			<div class="row">
-						<xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
+				<xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
 			</div>
 		</section>
 	</xsl:template>
@@ -50,7 +50,7 @@
 				</div>
 				<div class="overlay-text">
 					<div class="bottom-wrapper">
-						<h2>
+						<h3 class='title'>
 							<a>
 								<xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
@@ -62,7 +62,8 @@
 								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
 							</a>
 
-						</h2><a class="btn btn-arrow">
+						</h3>
+						<a class="btn btn-arrow">
 
 							<xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
@@ -75,9 +76,9 @@
 					</div>
 				</div>
 				<div class="figcaption">
-					<h2>
+					<h3 class='title'>
 						<xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-					</h2>
+					</h3>
 				</div>
 			</div>
 		</div>

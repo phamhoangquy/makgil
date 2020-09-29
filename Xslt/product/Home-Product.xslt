@@ -8,9 +8,9 @@
             <div class="container-custom">
                 <div class="container">
                     <div class="card-title">
-                        <h3>
+                        <h2 class='text'>
                             <xsl:value-of disable-output-escaping="yes" select="/ProductList/ModuleTitle"></xsl:value-of>
-                        </h3>
+                        </h2>
                     </div>
                     <div class="row">
                         <xsl:apply-templates select="/ProductList/Product"></xsl:apply-templates>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="overlay-text">
                     <div class="bottom-wrapper">
-                        <h2>
+                        <h3 class='title'>
                             <a>
                                 <xsl:attribute name="href">
                                     <xsl:value-of select="Url"></xsl:value-of>
@@ -53,7 +53,7 @@
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
                                 <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </a>
-                        </h2>
+                        </h3>
                         <a class="btn btn-arrow">
                             <xsl:attribute name="href">
                                 <xsl:value-of select="Url"></xsl:value-of>
@@ -66,9 +66,9 @@
                     </div>
                 </div>
                 <div class="figcaption">
-                    <h2>
+                    <h3 class='title'>
                         <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-                    </h2>
+                    </h3>
                 </div>
             </div>
         </div>

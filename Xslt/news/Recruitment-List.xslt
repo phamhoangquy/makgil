@@ -8,9 +8,9 @@
 			<div class="container-custom">
 				<div class="container">
 					<div class="card-title">
-						<h3>
+						<h2  class='text'>
 							<xsl:value-of disable-output-escaping="yes" select="/NewsList/ModuleTitle"></xsl:value-of>
-						</h3>
+						</h2>
 					</div>
 					<div class="row">
 						<div class="col-lg-12">

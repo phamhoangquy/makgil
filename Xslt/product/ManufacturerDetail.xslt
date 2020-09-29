@@ -33,10 +33,10 @@
 									</h2>
 								</div>
 								<ul class="side-navigation">
-									<xsl:apply-templates select="/ManufacturerDetail/ManufacturerOther"/>
+									<xsl:apply-templates select="/ManufacturerDetail/ManufacturerOther[Id != /ManufacturerDetail/ManufacturerId]"/>
 								</ul>
 							</div>
-						</div>
+						</div> 
 					</div>
 					<div class="col-12 col-lg-9">
 						<section class="product-display">
@@ -58,6 +58,8 @@
 				<a >
 					<xsl:attribute name="href">
 						<xsl:value-of select="Url" />
+				          <xsl:text>?index=</xsl:text>
+				        <xsl:value-of select="/ManufacturerDetail/ZoneId"></xsl:value-of>
 					</xsl:attribute>
 					<xsl:attribute name="title">
 						<xsl:value-of select="Title" />
